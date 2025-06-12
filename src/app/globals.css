@@ -1,0 +1,447 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #0f0f0f;
+  background-color: white;
+  font-weight: 400;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* Revolutionary Quantum-Level Animations */
+@keyframes neural-pulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes particle-float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-20px) rotate(120deg);
+  }
+  66% {
+    transform: translateY(10px) rotate(240deg);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drawLine {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes holographic-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(74, 111, 165, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(74, 111, 165, 0.6);
+  }
+}
+
+@keyframes quantum-field {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Revolutionary Utility Classes */
+.neural-pulse {
+  animation: neural-pulse 3s ease-in-out infinite;
+}
+
+.particle-float {
+  animation: particle-float 6s ease-in-out infinite;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+.scale-in {
+  animation: scaleIn 0.6s ease-out forwards;
+}
+
+.draw-line {
+  animation: drawLine 1s ease-out forwards;
+  transform-origin: left;
+}
+
+.holographic-glow {
+  animation: holographic-glow 2s ease-in-out infinite;
+}
+
+.quantum-field {
+  background: linear-gradient(-45deg, #4A6FA5, #8A9A5B, #FF6F3C, #4A6FA5);
+  background-size: 400% 400%;
+  animation: quantum-field 15s ease infinite;
+}
+
+/* Enhanced Navigation with Glass Morphism */
+.nav-link {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(74, 111, 165, 0.1);
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover::before {
+  opacity: 1;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #4A6FA5, #8A9A5B);
+  transition: all 0.3s ease-out;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* Glass Morphism Components */
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+.glass-morphism-dark {
+  background: rgba(15, 15, 15, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+/* Revolutionary Button System */
+.btn-primary {
+  @apply inline-flex items-center px-8 py-4 bg-primary-600 text-white rounded-lg font-medium transition-all duration-300 hover:bg-primary-700 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center px-8 py-4 border border-gray-300 text-charcoal-900 rounded-lg font-medium transition-all duration-300 hover:bg-gray-50 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+}
+
+.btn-accent {
+  @apply inline-flex items-center px-8 py-4 bg-accent-500 text-white rounded-lg font-medium transition-all duration-300 hover:bg-accent-600 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
+}
+
+/* Container System */
+.container-max {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-max {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-max {
+    padding: 0 2rem;
+  }
+}
+
+/* Architectural Grid Elements */
+.architectural-grid {
+  background-image: 
+    linear-gradient(to right, rgba(74, 111, 165, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(74, 111, 165, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.blueprint-lines {
+  background-image: 
+    linear-gradient(90deg, transparent 24px, rgba(74, 111, 165, 0.15) 25px, rgba(74, 111, 165, 0.15) 26px, transparent 27px),
+    linear-gradient(rgba(74, 111, 165, 0.15) 24px, transparent 25px, transparent 26px, rgba(74, 111, 165, 0.15) 27px);
+  background-size: 50px 50px;
+}
+
+/* Enhanced Shadow System */
+.shadow-neural {
+  box-shadow: 
+    0 4px 6px -1px rgba(74, 111, 165, 0.1),
+    0 2px 4px -1px rgba(74, 111, 165, 0.06);
+}
+
+.shadow-quantum {
+  box-shadow: 
+    0 20px 25px -5px rgba(74, 111, 165, 0.1),
+    0 10px 10px -5px rgba(74, 111, 165, 0.04);
+}
+
+.shadow-holographic {
+  box-shadow: 
+    0 25px 50px -12px rgba(74, 111, 165, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive Typography */
+.text-responsive-xl {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
+.text-responsive-2xl {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.text-responsive-3xl {
+  font-size: clamp(1.875rem, 4vw, 3rem);
+}
+
+/* Enhanced Backdrop Filters */
+.backdrop-neural {
+  backdrop-filter: blur(12px) saturate(180%);
+}
+
+.backdrop-quantum {
+  backdrop-filter: blur(20px) brightness(110%) contrast(120%);
+}
+
+/* Smooth Scrolling for Better UX */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Enhanced Focus Styles for Accessibility */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #4A6FA5;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .nav-glass-morphism {
+    background: rgba(15, 15, 15, 0.8);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Print Styles */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  a, a:visited {
+    text-decoration: underline;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* 
+ * Updated Color Scheme - Black/Grey Architecture
+ * Professional, high-contrast design with architectural precision
+ */
+
+/* Black/Grey Theme Colors */
+.text-charcoal {
+  color: #1f2937 !important; /* Deep charcoal for titles */
+}
+
+.text-charcoal-light {
+  color: #374151 !important; /* Lighter charcoal for body text */
+}
+
+.bg-charcoal {
+  background-color: #1f2937 !important;
+}
+
+.bg-charcoal-dark {
+  background-color: #111827 !important;
+}
+
+/* Override Tailwind gray utilities for black/grey theme */
+.text-gray-400 {
+  color: #9ca3af !important; /* Standard grey for balance */
+}
+
+.text-gray-500 {
+  color: #6b7280 !important; /* Medium grey for readability */
+}
+
+.text-gray-600 {
+  color: #4b5563 !important; /* Darker grey for strong contrast */
+}
+
+/* Fix white text opacity on dark backgrounds */
+.text-white\/60 {
+  color: rgba(255, 255, 255, 0.87) !important; /* High contrast on dark */
+}
+
+.text-white\/80 {
+  color: rgba(255, 255, 255, 0.95) !important; /* Very high contrast */
+}
+
+.text-white\/70 {
+  color: rgba(255, 255, 255, 0.9) !important; /* High contrast */
+}
+
+.text-white\/87 {
+  color: rgba(255, 255, 255, 0.87) !important; /* Custom high contrast */
+}
+
+/* Architectural Line Colors - Charcoal theme */
+.border-charcoal {
+  border-color: #374151 !important;
+}
+
+.border-charcoal-light {
+  border-color: #6b7280 !important;
+}
+
+/* Enhanced architectural grid with charcoal */
+.architectural-grid-charcoal {
+  background-image: 
+    linear-gradient(to right, rgba(31, 41, 55, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(31, 41, 55, 0.15) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Fix very small text contrast - critical for accessibility */
+.text-xs.text-gray-400,
+.text-xs.text-gray-500 {
+  color: #374151 !important; /* Much darker for small text readability */
+} 

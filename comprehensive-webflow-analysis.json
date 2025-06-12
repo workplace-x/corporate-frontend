@@ -1,0 +1,4352 @@
+{
+  "timestamp": "2025-06-05T17:45:58.438Z",
+  "totalCollections": 40,
+  "collections": {
+    "featured-guest": {
+      "displayName": "Featured Guests",
+      "id": "6488cbaf1124f2c31059be5a",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "title",
+          "company",
+          "name",
+          "slug"
+        ],
+        "imageFields": [
+          "headshot"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "title",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "name",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "image-analysis",
+          "field": "headshot",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "featuredguest",
+        "existingSchema": null,
+        "fieldMappings": {
+          "title": {
+            "type": "string"
+          },
+          "company": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "headshot": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "title": "CEO",
+        "company": "PLBY Group",
+        "name": "Ben Kohn",
+        "headshot": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86...",
+        "slug": "ben-kohn"
+      }
+    },
+    "service-links": {
+      "displayName": "Service Links",
+      "id": "6488cbaf1124f2c31059bea8",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [
+          "spaces"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "link"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "servicelink",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "spaces": {
+            "type": "array",
+            "of": [
+              {
+                "type": "space"
+              }
+            ]
+          },
+          "link": {
+            "type": "url"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": [
+          {
+            "field": "spaces",
+            "type": "array",
+            "targetCollection": "space",
+            "description": "References to spaces collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "link": "https://www.steelcase.com/insights-research/?objectType=insights-research&post-status=publish&taxono...",
+        "name": "Steelcase - Healthcare Research",
+        "slug": "steelcase---healthcare-research",
+        "spaces": "[ARRAY] 6 items"
+      }
+    },
+    "projects": {
+      "displayName": "Projects",
+      "id": "6488cbaf1124f2c31059bea9",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "square-footage",
+          "street-address",
+          "name",
+          "city-state",
+          "year-completed",
+          "photographer-credit",
+          "slug",
+          "tangram-region",
+          "industry-type"
+        ],
+        "imageFields": [
+          "logo"
+        ],
+        "referenceFields": [
+          "team",
+          "vertical-market",
+          "business-unit",
+          "partners",
+          "category"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "google-reference"
+        ],
+        "urlFields": [
+          "photographer-website"
+        ],
+        "emailFields": [],
+        "phoneFields": [
+          "longitude",
+          "lattitude"
+        ],
+        "richTextFields": [
+          "project-write-up"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "square-footage",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "year-completed",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "rich-text-enhancement",
+          "field": "project-write-up",
+          "priority": "high",
+          "description": "Convert HTML to Sanity blocks and enhance content"
+        },
+        {
+          "type": "image-analysis",
+          "field": "logo",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "project",
+        "existingSchema": "project",
+        "fieldMappings": {
+          "square-footage": {
+            "type": "string"
+          },
+          "street-address": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "city-state": {
+            "type": "string"
+          },
+          "year-completed": {
+            "type": "string"
+          },
+          "photographer-credit": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "tangram-region": {
+            "type": "string"
+          },
+          "industry-type": {
+            "type": "string"
+          },
+          "project-write-up": {
+            "type": "array",
+            "of": [
+              {
+                "type": "block"
+              }
+            ]
+          },
+          "logo": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "team": {
+            "type": "array",
+            "of": [
+              {
+                "type": "teamMember"
+              }
+            ]
+          },
+          "vertical-market": {
+            "type": "array",
+            "of": [
+              {
+                "type": "verticalmarket"
+              }
+            ]
+          },
+          "business-unit": {
+            "type": "array",
+            "of": [
+              {
+                "type": "businessunit"
+              }
+            ]
+          },
+          "partners": {
+            "type": "array",
+            "of": [
+              {
+                "type": "partner"
+              }
+            ]
+          },
+          "category": {
+            "type": "array",
+            "of": [
+              {
+                "type": "category"
+              }
+            ]
+          },
+          "google-reference": {
+            "type": "boolean"
+          },
+          "photographer-website": {
+            "type": "url"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": [
+          {
+            "field": "team",
+            "type": "array",
+            "targetCollection": "teamMember",
+            "description": "References to team collection"
+          },
+          {
+            "field": "vertical-market",
+            "type": "array",
+            "targetCollection": "verticalmarket",
+            "description": "References to vertical-market collection"
+          },
+          {
+            "field": "business-unit",
+            "type": "array",
+            "targetCollection": "businessunit",
+            "description": "References to business-unit collection"
+          },
+          {
+            "field": "partners",
+            "type": "array",
+            "targetCollection": "partner",
+            "description": "References to partners collection"
+          },
+          {
+            "field": "category",
+            "type": "array",
+            "targetCollection": "category",
+            "description": "References to category collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "photographer-website": "https://www.rw-collective.com/",
+        "google-reference": false,
+        "square-footage": "20,000",
+        "street-address": "1161 Corporate Dr",
+        "name": "Ikon Technologies",
+        "longitude": "-97.0684790576704",
+        "city-state": "Arlington, TX",
+        "lattitude": "32.765171836828856",
+        "year-completed": "2024",
+        "photographer-credit": "RW Collective",
+        "slug": "ikon-technologies",
+        "team": "[ARRAY] 4 items",
+        "tangram-region": "6488cbaf1124f2c31059cef2",
+        "industry-type": "6488cbaf1124f2c31059c5d2",
+        "vertical-market": "[ARRAY] 1 items",
+        "business-unit": "[ARRAY] 2 items",
+        "partners": "[ARRAY] 1 items",
+        "logo": "[IMAGE] https://cdn.prod.website-files.com/5d4c9442574a782...",
+        "category": "[ARRAY] 2 items",
+        "project-write-up": "<p>IIkon Technologies, a leader in telematics solutions, renovated its Arlington, Texas headquarters..."
+      }
+    },
+    "featured-products": {
+      "displayName": "Featured Products",
+      "id": "6488cbaf1124f2c31059beaa",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "description",
+          "manufacturer",
+          "slug"
+        ],
+        "imageFields": [
+          "featured-image"
+        ],
+        "referenceFields": [
+          "business-unit",
+          "product-category",
+          "vertical-market"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "product-website"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "name",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "professional-writing",
+          "field": "description",
+          "priority": "medium",
+          "description": "AI writing improvement for professional tone"
+        },
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "image-analysis",
+          "field": "featured-image",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "featuredproduct",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text",
+            "rows": 4
+          },
+          "manufacturer": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "featured-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "business-unit": {
+            "type": "array",
+            "of": [
+              {
+                "type": "businessunit"
+              }
+            ]
+          },
+          "product-category": {
+            "type": "array",
+            "of": [
+              {
+                "type": "productcategory"
+              }
+            ]
+          },
+          "vertical-market": {
+            "type": "array",
+            "of": [
+              {
+                "type": "verticalmarket"
+              }
+            ]
+          },
+          "product-website": {
+            "type": "url"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": [
+          {
+            "field": "business-unit",
+            "type": "array",
+            "targetCollection": "businessunit",
+            "description": "References to business-unit collection"
+          },
+          {
+            "field": "product-category",
+            "type": "array",
+            "targetCollection": "productcategory",
+            "description": "References to product-category collection"
+          },
+          {
+            "field": "vertical-market",
+            "type": "array",
+            "targetCollection": "verticalmarket",
+            "description": "References to vertical-market collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "product-website": "https://arcadiacontract.com/product/haven-lounge/",
+        "name": "Haven",
+        "description": "Sit at ease in a sanctuary of understated elegance with Haven. Thoughtfully designed and smartly imp...",
+        "business-unit": "[ARRAY] 1 items",
+        "manufacturer": "6488cbaf1124f2c31059cce0",
+        "product-category": "[ARRAY] 1 items",
+        "vertical-market": "[ARRAY] 1 items",
+        "featured-image": "[IMAGE] https://cdn.prod.website-files.com/5d4c9442574a782...",
+        "slug": "haven"
+      }
+    },
+    "category": {
+      "displayName": "Categories",
+      "id": "6488cbaf1124f2c31059beab",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "show-in-shop-navigation",
+          "show-home-page-thumb",
+          "featured-category"
+        ],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "category",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "show-in-shop-navigation": {
+            "type": "boolean"
+          },
+          "show-home-page-thumb": {
+            "type": "boolean"
+          },
+          "featured-category": {
+            "type": "boolean"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "show-in-shop-navigation": false,
+        "show-home-page-thumb": false,
+        "featured-category": false,
+        "name": "Task Chair",
+        "slug": "task-chair"
+      }
+    },
+    "partners": {
+      "displayName": "Partners",
+      "id": "6488cbaf1124f2c31059bec3",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [
+          "logo"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "website"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "image-analysis",
+          "field": "logo",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "partner",
+        "existingSchema": "partner",
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "website": {
+            "type": "url"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "website": "https://devenneygroup.com/",
+        "name": "Devenney Group",
+        "slug": "devenney-group",
+        "logo": "[IMAGE] https://cdn.prod.website-files.com/5d4c9442574a782..."
+      }
+    },
+    "magazine": {
+      "displayName": "Puzzles",
+      "id": "6488cbaf1124f2c31059bedb",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "issue-embed-code",
+          "volume-number"
+        ],
+        "imageFields": [
+          "cover-image",
+          "featured-image"
+        ],
+        "referenceFields": [],
+        "dateFields": [
+          "name",
+          "slug"
+        ],
+        "numberFields": [],
+        "booleanFields": [
+          "hide-from-general-site"
+        ],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 75,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "volume-number",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "image-analysis",
+          "field": "cover-image",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "image-analysis",
+          "field": "featured-image",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "magazine",
+        "existingSchema": null,
+        "fieldMappings": {
+          "issue-embed-code": {
+            "type": "string"
+          },
+          "volume-number": {
+            "type": "string"
+          },
+          "cover-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "name": {
+            "type": "datetime"
+          },
+          "slug": {
+            "type": "datetime"
+          },
+          "hide-from-general-site": {
+            "type": "boolean"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "hide-from-general-site": false,
+        "issue-embed-code": "//e.issuu.com/embed.html?d=k-12_puzzle&u=tangraminteriors",
+        "name": "K-12",
+        "slug": "k-12",
+        "cover-image": "[IMAGE] https://cdn.prod.website-files.com/5d4c9442574a782...",
+        "volume-number": "Volume 11",
+        "featured-image": "[IMAGE] https://cdn.prod.website-files.com/5d4c9442574a782..."
+      }
+    },
+    "event-type": {
+      "displayName": "Event Types",
+      "id": "6488cbaf1124f2c31059bef1",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "eventtype",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Lunch + Learn",
+        "slug": "lunch-learn"
+      }
+    },
+    "podcast": {
+      "displayName": "Podcasts",
+      "id": "6488cbaf1124f2c31059bf0d",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "description",
+          "slug"
+        ],
+        "imageFields": [
+          "featured-image"
+        ],
+        "referenceFields": [
+          "featured-guest",
+          "hosts"
+        ],
+        "dateFields": [
+          "publish-date"
+        ],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "anchor-link"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "description-new"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 80,
+      "opportunities": [
+        {
+          "type": "content-expansion",
+          "field": "description",
+          "priority": "medium",
+          "description": "Expand and enhance content"
+        },
+        {
+          "type": "professional-writing",
+          "field": "description",
+          "priority": "medium",
+          "description": "AI writing improvement for professional tone"
+        },
+        {
+          "type": "rich-text-enhancement",
+          "field": "description-new",
+          "priority": "high",
+          "description": "Convert HTML to Sanity blocks and enhance content"
+        },
+        {
+          "type": "image-analysis",
+          "field": "featured-image",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "podcast",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text",
+            "rows": 4
+          },
+          "slug": {
+            "type": "string"
+          },
+          "description-new": {
+            "type": "array",
+            "of": [
+              {
+                "type": "block"
+              }
+            ]
+          },
+          "featured-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-guest": {
+            "type": "array",
+            "of": [
+              {
+                "type": "featuredguest"
+              }
+            ]
+          },
+          "hosts": {
+            "type": "array",
+            "of": [
+              {
+                "type": "host"
+              }
+            ]
+          },
+          "publish-date": {
+            "type": "datetime"
+          },
+          "anchor-link": {
+            "type": "url"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": [
+          {
+            "field": "featured-guest",
+            "type": "array",
+            "targetCollection": "featuredguest",
+            "description": "References to featured-guest collection"
+          },
+          {
+            "field": "hosts",
+            "type": "array",
+            "targetCollection": "host",
+            "description": "References to hosts collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "publish-date": "2021-08-09T00:00:00.000Z",
+        "anchor-link": "https://anchor.fm/tangraminteriors/episodes/A-New-Day-at-PLBY---Insights-from-CEO--Ben-Kohn-e15meek",
+        "name": "S2E8: A New Day at PLBY - Insights from CEO, Ben Kohn",
+        "description-new": "<p>Tangram CMO, Paul Smith, sat down with the CEO of PLBY Group, Ben Kohn, to discuss what it was li...",
+        "description": "A-New-Day-at-PLBY---Insights-from-CEO--Ben-Kohn-e15meek",
+        "featured-image": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86...",
+        "slug": "a-new-day-at-plby-insights-from-ceo-ben-kohn",
+        "featured-guest": "[ARRAY] 1 items",
+        "hosts": "[ARRAY] 1 items"
+      }
+    },
+    "service": {
+      "displayName": "Business Units",
+      "id": "6488cbaf1124f2c31059bf23",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "short-overview",
+          "name",
+          "about",
+          "expertise",
+          "headline",
+          "slug",
+          "seo-summary"
+        ],
+        "imageFields": [
+          "menu-icon"
+        ],
+        "referenceFields": [
+          "sales-team",
+          "market-services"
+        ],
+        "dateFields": [],
+        "numberFields": [
+          "ranking"
+        ],
+        "booleanFields": [
+          "limited-service-profile"
+        ],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 38,
+      "opportunities": [
+        {
+          "type": "professional-writing",
+          "field": "seo-summary",
+          "priority": "medium",
+          "description": "AI writing improvement for professional tone"
+        },
+        {
+          "type": "image-analysis",
+          "field": "menu-icon",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "service",
+        "existingSchema": "service",
+        "fieldMappings": {
+          "short-overview": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "about": {
+            "type": "string"
+          },
+          "expertise": {
+            "type": "string"
+          },
+          "headline": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "seo-summary": {
+            "type": "string"
+          },
+          "menu-icon": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "sales-team": {
+            "type": "array",
+            "of": [
+              {
+                "type": "teamMember"
+              }
+            ]
+          },
+          "market-services": {
+            "type": "array",
+            "of": [
+              {
+                "type": "marketservice"
+              }
+            ]
+          },
+          "ranking": {
+            "type": "number"
+          },
+          "limited-service-profile": {
+            "type": "boolean"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": [
+          {
+            "field": "market-services",
+            "type": "array",
+            "targetCollection": "marketservice",
+            "description": "References to market-services collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "ranking": 7,
+        "short-overview": "At Tangram Move + Facility Services, we're your all-in-one solution for facility needs. Whether you'...",
+        "name": "Move + Facility Services",
+        "about": "<p id=\"\">At Tangram Move + Facility Services, we're your all-in-one solution for facility needs. Whe...",
+        "expertise": "Tangram Move + Facility Services offers comprehensive solutions for facility needs. We specialize in...",
+        "headline": "Efficient, Comprehensive Solutions for Your Workspace Transition and Maintenance.",
+        "menu-icon": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86...",
+        "slug": "move-facility-services",
+        "sales-team": "[ARRAY] 0 items",
+        "market-services": "[ARRAY] 3 items",
+        "limited-service-profile": true,
+        "seo-summary": "At Tangram Move + Facility Services, we're your all-in-one solution for facility needs. Whether you'..."
+      }
+    },
+    "philanthropy": {
+      "displayName": "Philanthropies",
+      "id": "6488cbaf1124f2c31059bf64",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [
+          "logo"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "website"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "image-analysis",
+          "field": "logo",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "philanthropy",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "website": {
+            "type": "url"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "website": "https://www.ifhomeless.org/",
+        "name": "Illumination Foundation",
+        "logo": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86...",
+        "slug": "illumination-foundation"
+      }
+    },
+    "internal-videos": {
+      "displayName": "Internal Videos",
+      "id": "6488cbaf1124f2c31059bf99",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": [
+          "video-link"
+        ]
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "internalvideo",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "video-link": "[IMAGE] https://vimeo.com/874955685?share=copy...",
+        "name": "Dallas Showroom",
+        "slug": "dallas-showroom"
+      }
+    },
+    "wfh-childrens": {
+      "displayName": "Children's WFH Orders",
+      "id": "6488cbaf1124f2c31059bfba",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "employee-name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [
+          "employee-number"
+        ],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [
+          "employee-email-address"
+        ],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "wfhchildren",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "employee-name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "employee-number": {
+            "type": "number"
+          },
+          "employee-email-address": {
+            "type": "email"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "employee-email-address": "aleortiz@childrens.com",
+        "employee-number": 75125,
+        "name": "Alexandria Ortiz",
+        "employee-name": "Alexandria Ortiz",
+        "slug": "WFH-G7JL2J1E4Q"
+      }
+    },
+    "manufacturers": {
+      "displayName": "Manufacturers",
+      "id": "6488cbaf1124f2c31059bfe3",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "category",
+          "slug"
+        ],
+        "imageFields": [
+          "logo"
+        ],
+        "referenceFields": [
+          "vertical-market",
+          "business-unit"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "website"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "name",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "image-analysis",
+          "field": "logo",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "manufacturer",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "vertical-market": {
+            "type": "array",
+            "of": [
+              {
+                "type": "verticalmarket"
+              }
+            ]
+          },
+          "business-unit": {
+            "type": "array",
+            "of": [
+              {
+                "type": "businessunit"
+              }
+            ]
+          },
+          "website": {
+            "type": "url"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": [
+          {
+            "field": "vertical-market",
+            "type": "array",
+            "targetCollection": "verticalmarket",
+            "description": "References to vertical-market collection"
+          },
+          {
+            "field": "business-unit",
+            "type": "array",
+            "targetCollection": "businessunit",
+            "description": "References to business-unit collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "website": "https://www.nevers.com/",
+        "name": "Nevers",
+        "vertical-market": "[ARRAY] 2 items",
+        "category": "6488cbaf1124f2c31059c519",
+        "business-unit": "[ARRAY] 1 items",
+        "logo": "[IMAGE] https://cdn.prod.website-files.com/5d4c9442574a782...",
+        "slug": "nevers"
+      }
+    },
+    "blog-tags": {
+      "displayName": "Blog Tags",
+      "id": "6488cbaf1124f2c31059bfff",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "name",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "blogtag",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Furniture",
+        "slug": "furniture"
+      }
+    },
+    "files-pdfs": {
+      "displayName": "Files + PDFs",
+      "id": "6488cbaf1124f2c31059c018",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [
+          "upload-file"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "image-analysis",
+          "field": "upload-file",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "filespdf",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "upload-file": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Health Spaces Booklet 2025",
+        "slug": "health-spaces-booklet",
+        "upload-file": "[IMAGE] https://cdn.prod.website-files.com/5d4c9442574a782..."
+      }
+    },
+    "project-industry": {
+      "displayName": "Project Industries",
+      "id": "6488cbaf1124f2c31059c039",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "projectindustry",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Hospitality",
+        "slug": "hospitality"
+      }
+    },
+    "issuu-publication": {
+      "displayName": "Issuu Publications",
+      "id": "6488cbaf1124f2c31059c03a",
+      "itemCount": 2,
+      "fieldAnalysis": {
+        "textFields": [
+          "issuu-article-url-title-steelcase-next-generation-education",
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "issuu-link"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "issuupublication",
+        "existingSchema": null,
+        "fieldMappings": {
+          "issuu-article-url-title-steelcase-next-generation-education": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "issuu-link": {
+            "type": "url"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "issuu-link": "https://issuu.com/tangraminteriors/docs/revised_gsa_capabilities_brochure_02_18_2022_final",
+        "issuu-article-url-title-steelcase-next-generation-education": "revised_gsa_capabilities_brochure_02_18",
+        "name": "GSA Capabilities",
+        "slug": "gsa-capabilities"
+      }
+    },
+    "team": {
+      "displayName": "Employees",
+      "id": "6488cbaf1124f2c31059c03b",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "title",
+          "business-unit",
+          "location",
+          "slug",
+          "tangram-ten"
+        ],
+        "imageFields": [
+          "avatar"
+        ],
+        "referenceFields": [
+          "department-2"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "pacific-holdings",
+          "board-of-directors",
+          "senior-leadership",
+          "unit-leader",
+          "executive-team",
+          "sales-leadership"
+        ],
+        "urlFields": [
+          "edit-url",
+          "linkedin-profile"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 86,
+      "opportunities": [
+        {
+          "type": "image-analysis",
+          "field": "avatar",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "teamMember",
+        "existingSchema": "teamMember",
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "business-unit": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "tangram-ten": {
+            "type": "string"
+          },
+          "avatar": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "department-2": {
+            "type": "array",
+            "of": [
+              {
+                "type": "department2"
+              }
+            ]
+          },
+          "pacific-holdings": {
+            "type": "boolean"
+          },
+          "board-of-directors": {
+            "type": "boolean"
+          },
+          "senior-leadership": {
+            "type": "boolean"
+          },
+          "unit-leader": {
+            "type": "boolean"
+          },
+          "executive-team": {
+            "type": "boolean"
+          },
+          "sales-leadership": {
+            "type": "boolean"
+          },
+          "edit-url": {
+            "type": "url"
+          },
+          "linkedin-profile": {
+            "type": "url"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": [
+          {
+            "field": "department-2",
+            "type": "array",
+            "targetCollection": "department2",
+            "description": "References to department-2 collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "pacific-holdings": false,
+        "board-of-directors": false,
+        "senior-leadership": false,
+        "unit-leader": false,
+        "executive-team": false,
+        "sales-leadership": false,
+        "name": "Anh Neustadter",
+        "title": "Sales Executive",
+        "avatar": "[IMAGE] https://cdn.prod.website-files.com/5d4c9442574a782...",
+        "business-unit": "6488cbaf1124f2c31059c61d",
+        "department-2": "[ARRAY] 1 items",
+        "location": "6488cbaf1124f2c31059cef2",
+        "slug": "anh-neustadter",
+        "edit-url": "https://web.miniextensions.com/M5BWBi8TqW7YH8AGlLP0/recSdSrx3ecmSCmAw",
+        "linkedin-profile": "https://www.linkedin.com/in/anhnguyen04/",
+        "tangram-ten": "<p id=\"\">As a Sales Executive at Tangram Interiors, Anh Neustadter brings a dynamic, client-first ap..."
+      }
+    },
+    "product": {
+      "displayName": "Products",
+      "id": "6488cbaf1124f2c31059c03c",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "tax-category",
+          "ec-product-type",
+          "name",
+          "description",
+          "manufacturer-2",
+          "slug",
+          "default-sku"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "shippable"
+        ],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "name",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "professional-writing",
+          "field": "description",
+          "priority": "medium",
+          "description": "AI writing improvement for professional tone"
+        },
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "product",
+        "existingSchema": "product",
+        "fieldMappings": {
+          "tax-category": {
+            "type": "string"
+          },
+          "ec-product-type": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text",
+            "rows": 4
+          },
+          "manufacturer-2": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "default-sku": {
+            "type": "string"
+          },
+          "shippable": {
+            "type": "boolean"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "tax-category": "standard-taxable",
+        "shippable": true,
+        "ec-product-type": "ff42fee0113744f693a764e3431a9cc2",
+        "name": "Orchestra",
+        "description": "The Orchestra Collection offers an ensemble of seating solutions perfect for the needs of all facili...",
+        "manufacturer-2": "6488cbaf1124f2c31059cce7",
+        "slug": "orchestra",
+        "default-sku": "680687dc658d88e858ea9ab4"
+      }
+    },
+    "department": {
+      "displayName": "Departments",
+      "id": "6488cbaf1124f2c31059c03d",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "department",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Engineering",
+        "slug": "engineering"
+      }
+    },
+    "rendering": {
+      "displayName": "Renderings",
+      "id": "6488cbaf1124f2c31059c03e",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug",
+          "project-category",
+          "example-1-title",
+          "example-2-title",
+          "example-3-title"
+        ],
+        "imageFields": [
+          "header-image"
+        ],
+        "referenceFields": [
+          "rendering-examples",
+          "rendering-examples-2",
+          "rendering-examples-3"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "name",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "example-2-title",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "image-analysis",
+          "field": "header-image",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "rendering",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "project-category": {
+            "type": "string"
+          },
+          "example-1-title": {
+            "type": "string"
+          },
+          "example-2-title": {
+            "type": "string"
+          },
+          "example-3-title": {
+            "type": "string"
+          },
+          "header-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "rendering-examples": {
+            "type": "array",
+            "of": [
+              {
+                "type": "renderingexample"
+              }
+            ]
+          },
+          "rendering-examples-2": {
+            "type": "array",
+            "of": [
+              {
+                "type": "renderingexamples2"
+              }
+            ]
+          },
+          "rendering-examples-3": {
+            "type": "array",
+            "of": [
+              {
+                "type": "renderingexamples3"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": [
+          {
+            "field": "rendering-examples",
+            "type": "array",
+            "targetCollection": "renderingexample",
+            "description": "References to rendering-examples collection"
+          },
+          {
+            "field": "rendering-examples-2",
+            "type": "array",
+            "targetCollection": "renderingexamples2",
+            "description": "References to rendering-examples-2 collection"
+          },
+          {
+            "field": "rendering-examples-3",
+            "type": "array",
+            "targetCollection": "renderingexamples3",
+            "description": "References to rendering-examples-3 collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "name": "Education",
+        "slug": "education",
+        "project-category": "6488cbaf1124f2c31059c4de",
+        "rendering-examples": "[ARRAY] 10 items",
+        "example-1-title": "Classrooms",
+        "example-2-title": "Offices",
+        "rendering-examples-2": "[ARRAY] 4 items",
+        "example-3-title": "Collaborative Areas",
+        "rendering-examples-3": "[ARRAY] 1 items",
+        "header-image": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86..."
+      }
+    },
+    "sku": {
+      "displayName": "SKUs",
+      "id": "6488cbaf1124f2c31059c03f",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "ec-sku-billing-method",
+          "name",
+          "product",
+          "slug"
+        ],
+        "imageFields": [
+          "main-image"
+        ],
+        "referenceFields": [
+          "more-images",
+          "download-files"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": [
+          "price",
+          "sku-values"
+        ]
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "ec-sku-billing-method",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "name",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "image-analysis",
+          "field": "main-image",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "sku",
+        "existingSchema": null,
+        "fieldMappings": {
+          "ec-sku-billing-method": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "product": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "main-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "more-images": {
+            "type": "array",
+            "of": [
+              {
+                "type": "moreimage"
+              }
+            ]
+          },
+          "download-files": {
+            "type": "array",
+            "of": [
+              {
+                "type": "downloadfile"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "ec-sku-billing-method": "one-time",
+        "compare-at-price": null,
+        "width": null,
+        "length": null,
+        "height": null,
+        "price": "[OBJECT] value, unit",
+        "weight": null,
+        "ec-sku-subscription-plan": null,
+        "sku-values": "[OBJECT] ",
+        "sku": null,
+        "more-images": "[ARRAY] 0 items",
+        "download-files": "[ARRAY] 0 items",
+        "name": "Orchestra",
+        "main-image": "[IMAGE] https://cdn.prod.website-files.com/5d4c9442574a782...",
+        "product": "680687da360ef1ff0f27a033",
+        "slug": "orchestra"
+      }
+    },
+    "rendering-categories": {
+      "displayName": "Rendering Categories",
+      "id": "6488cbaf1124f2c31059c040",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "name",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "renderingcategorie",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Workplace",
+        "slug": "workplace"
+      }
+    },
+    "blog": {
+      "displayName": "Blog Posts",
+      "id": "6488cbaf1124f2c31059c041",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "content-2",
+          "name",
+          "slug",
+          "category-2"
+        ],
+        "imageFields": [
+          "main-image-2"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "falkbuilt-feature"
+        ],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 80,
+      "opportunities": [
+        {
+          "type": "image-analysis",
+          "field": "main-image-2",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "blogPost",
+        "existingSchema": "blogPost",
+        "fieldMappings": {
+          "content-2": {
+            "type": "text",
+            "rows": 4
+          },
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "category-2": {
+            "type": "string"
+          },
+          "main-image-2": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "falkbuilt-feature": {
+            "type": "boolean"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "falkbuilt-feature": false,
+        "content-2": "<p id=\"\"><strong id=\"\">Please join us in welcoming Michael Flores to Tangram! He is joining the Dall...",
+        "name": "Meet Michael Flores",
+        "slug": "meet-michael-flores",
+        "main-image-2": "[IMAGE] https://cdn.prod.website-files.com/5d4c9442574a782...",
+        "category-2": "6488cbaf1124f2c31059c542"
+      }
+    },
+    "instagram-photos": {
+      "displayName": "Instagram Photos",
+      "id": "6488cbaf1124f2c31059c042",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "info",
+          "name",
+          "slug"
+        ],
+        "imageFields": [
+          "photo-2"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 75,
+      "opportunities": [
+        {
+          "type": "image-analysis",
+          "field": "photo-2",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "instagramphoto",
+        "existingSchema": null,
+        "fieldMappings": {
+          "info": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "photo-2": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "info": "Stay safe and have a scenic weekend 🏙 #TangramInteriors #tgif",
+        "name": "2340237464056077295_259925719",
+        "slug": "2340237464056077295-259925719",
+        "photo-2": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86..."
+      }
+    },
+    "locations": {
+      "displayName": "Locations",
+      "id": "6488cbaf1124f2c31059c044",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "abreviation",
+          "street-address",
+          "city-state-zip",
+          "name",
+          "regional-leader",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "sales-team-page"
+        ],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "abreviation",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "name",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "location",
+        "existingSchema": null,
+        "fieldMappings": {
+          "abreviation": {
+            "type": "string"
+          },
+          "street-address": {
+            "type": "string"
+          },
+          "city-state-zip": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "regional-leader": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "sales-team-page": {
+            "type": "boolean"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "sales-team-page": false,
+        "abreviation": "LUB",
+        "street-address": "6510 70th St",
+        "city-state-zip": "Lubbock, TX 79424",
+        "name": "Lubbock",
+        "regional-leader": "65fc8c667ccf34b4f7b10c19",
+        "slug": "lubbock"
+      }
+    },
+    "blog-categories": {
+      "displayName": "Blog Categories",
+      "id": "6488cbaf1124f2c31059c046",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "blogcategorie",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Second Safest Place Webinar Series",
+        "slug": "second-safest-place-webinar-series"
+      }
+    },
+    "tangram-services": {
+      "displayName": "Tangram Services",
+      "id": "6488cbaf1124f2c31059c047",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "summary",
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 67,
+      "opportunities": [
+        {
+          "type": "professional-writing",
+          "field": "summary",
+          "priority": "medium",
+          "description": "AI writing improvement for professional tone"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "tangramservice",
+        "existingSchema": null,
+        "fieldMappings": {
+          "summary": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "summary": "<p id=\"\">Studio Other is deeply committed to responsible furniture manufacturing. Our designs are cr...",
+        "name": "Responsible Furniture",
+        "slug": "responsible-furniture"
+      }
+    },
+    "project-category": {
+      "displayName": "Project Categories",
+      "id": "6488cbaf1124f2c31059c062",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "projectcategory",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Studio Other",
+        "slug": "studio-other"
+      }
+    },
+    "client-list": {
+      "displayName": "Client Lists",
+      "id": "6488cbaf1124f2c31059c0b4",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "city",
+          "name",
+          "latitude",
+          "longitude",
+          "state",
+          "address",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "city",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "latitude",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "state",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "clientlist",
+        "existingSchema": null,
+        "fieldMappings": {
+          "city": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "latitude": {
+            "type": "string"
+          },
+          "longitude": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "city": "Fresno",
+        "name": "Veterans Health Administration",
+        "latitude": "36.77255",
+        "longitude": "-119.779263",
+        "state": "CA",
+        "address": "2615 E Clinton Ave",
+        "slug": "vah261"
+      }
+    },
+    "vertical-markets": {
+      "displayName": "Vertical Markets",
+      "id": "6488cbaf1124f2c31059c0cc",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "title-5",
+          "title-6",
+          "title-7",
+          "name",
+          "headline",
+          "title-1",
+          "title-2",
+          "title-3",
+          "title-4",
+          "slug",
+          "featured-puzzle"
+        ],
+        "imageFields": [
+          "featured-image-2",
+          "featured-image-3",
+          "featured-image-4",
+          "featured-image-5",
+          "featured-image",
+          "menu-icon"
+        ],
+        "referenceFields": [
+          "featured-products",
+          "featured-manufacturers",
+          "featured-projects",
+          "team"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "paragraph-1",
+          "paragraph-2",
+          "paragraph-3",
+          "paragraph-4",
+          "paragraph-5",
+          "paragraph-6",
+          "paragraph-7",
+          "overview-paragraph"
+        ],
+        "unknownFields": [
+          "featured-video"
+        ]
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "rich-text-enhancement",
+          "field": "paragraph-1",
+          "priority": "high",
+          "description": "Convert HTML to Sanity blocks and enhance content"
+        },
+        {
+          "type": "rich-text-enhancement",
+          "field": "paragraph-2",
+          "priority": "high",
+          "description": "Convert HTML to Sanity blocks and enhance content"
+        },
+        {
+          "type": "rich-text-enhancement",
+          "field": "paragraph-3",
+          "priority": "high",
+          "description": "Convert HTML to Sanity blocks and enhance content"
+        },
+        {
+          "type": "rich-text-enhancement",
+          "field": "paragraph-4",
+          "priority": "high",
+          "description": "Convert HTML to Sanity blocks and enhance content"
+        },
+        {
+          "type": "rich-text-enhancement",
+          "field": "paragraph-5",
+          "priority": "high",
+          "description": "Convert HTML to Sanity blocks and enhance content"
+        },
+        {
+          "type": "rich-text-enhancement",
+          "field": "paragraph-6",
+          "priority": "high",
+          "description": "Convert HTML to Sanity blocks and enhance content"
+        },
+        {
+          "type": "rich-text-enhancement",
+          "field": "paragraph-7",
+          "priority": "high",
+          "description": "Convert HTML to Sanity blocks and enhance content"
+        },
+        {
+          "type": "rich-text-enhancement",
+          "field": "overview-paragraph",
+          "priority": "high",
+          "description": "Convert HTML to Sanity blocks and enhance content"
+        },
+        {
+          "type": "image-analysis",
+          "field": "featured-image-2",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "image-analysis",
+          "field": "featured-image-3",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "image-analysis",
+          "field": "featured-image-4",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "image-analysis",
+          "field": "featured-image-5",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "image-analysis",
+          "field": "featured-image",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "image-analysis",
+          "field": "menu-icon",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "verticalmarket",
+        "existingSchema": null,
+        "fieldMappings": {
+          "title-5": {
+            "type": "string"
+          },
+          "title-6": {
+            "type": "string"
+          },
+          "title-7": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "headline": {
+            "type": "string"
+          },
+          "title-1": {
+            "type": "string"
+          },
+          "title-2": {
+            "type": "string"
+          },
+          "title-3": {
+            "type": "string"
+          },
+          "title-4": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "featured-puzzle": {
+            "type": "string"
+          },
+          "paragraph-1": {
+            "type": "array",
+            "of": [
+              {
+                "type": "block"
+              }
+            ]
+          },
+          "paragraph-2": {
+            "type": "array",
+            "of": [
+              {
+                "type": "block"
+              }
+            ]
+          },
+          "paragraph-3": {
+            "type": "array",
+            "of": [
+              {
+                "type": "block"
+              }
+            ]
+          },
+          "paragraph-4": {
+            "type": "array",
+            "of": [
+              {
+                "type": "block"
+              }
+            ]
+          },
+          "paragraph-5": {
+            "type": "array",
+            "of": [
+              {
+                "type": "block"
+              }
+            ]
+          },
+          "paragraph-6": {
+            "type": "array",
+            "of": [
+              {
+                "type": "block"
+              }
+            ]
+          },
+          "paragraph-7": {
+            "type": "array",
+            "of": [
+              {
+                "type": "block"
+              }
+            ]
+          },
+          "overview-paragraph": {
+            "type": "array",
+            "of": [
+              {
+                "type": "block"
+              }
+            ]
+          },
+          "featured-image-2": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-image-3": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-image-4": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-image-5": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "menu-icon": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-products": {
+            "type": "array",
+            "of": [
+              {
+                "type": "product"
+              }
+            ]
+          },
+          "featured-manufacturers": {
+            "type": "array",
+            "of": [
+              {
+                "type": "manufacturer"
+              }
+            ]
+          },
+          "featured-projects": {
+            "type": "array",
+            "of": [
+              {
+                "type": "featuredproject"
+              }
+            ]
+          },
+          "team": {
+            "type": "array",
+            "of": [
+              {
+                "type": "teamMember"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": [
+          {
+            "field": "featured-products",
+            "type": "array",
+            "targetCollection": "product",
+            "description": "References to featured-products collection"
+          },
+          {
+            "field": "featured-manufacturers",
+            "type": "array",
+            "targetCollection": "manufacturer",
+            "description": "References to featured-manufacturers collection"
+          },
+          {
+            "field": "featured-projects",
+            "type": "array",
+            "targetCollection": "featuredproject",
+            "description": "References to featured-projects collection"
+          },
+          {
+            "field": "team",
+            "type": "array",
+            "targetCollection": "teamMember",
+            "description": "References to team collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "featured-video": "[IMAGE] https://vimeo.com/793412011...",
+        "title-5": "Adaptability for Future Growth",
+        "title-6": "Sustainability for a Better Future",
+        "title-7": "Elevate Your Workspace Today",
+        "name": "Workplaces",
+        "paragraph-1": "<p id=\"\">No two companies are the same, and we understand that your workspace should reflect your in...",
+        "paragraph-2": "<p>Functionality is at the core of every successful workspace. Tangram Interiors excels at designing...",
+        "headline": "Elevate Your Workspace",
+        "paragraph-3": "<p id=\"\">Inspiration and collaboration are the engines that fuel innovation. Tangram Interiors creat...",
+        "paragraph-4": "<p id=\"\">Your workspace is an extension of your brand identity. Tangram Interiors understands the im...",
+        "paragraph-5": "<p id=\"\">Companies evolve and grow, and your workspace should be able to adapt to changing needs. Ta...",
+        "paragraph-6": "<p id=\"\">At Tangram Interiors, we are committed to sustainability and creating a greener future. We ...",
+        "paragraph-7": "<p id=\"\">Take your company's workspace to new heights with Tangram Interiors. Contact us today to di...",
+        "overview-paragraph": "<p>At Tangram Interiors, we believe that a well-designed workspace can transform your company's cult...",
+        "title-1": "Customized Solutions for Your Success",
+        "title-2": "Functional and Efficient Design",
+        "title-3": "Inspiration and Collaboration",
+        "title-4": "Aesthetics that Reflect Your Brand",
+        "slug": "corporate",
+        "featured-image-2": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86...",
+        "featured-image-3": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86...",
+        "featured-image-4": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86...",
+        "featured-image-5": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86...",
+        "featured-image": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86...",
+        "featured-products": "[ARRAY] 6 items",
+        "featured-manufacturers": "[ARRAY] 7 items",
+        "featured-projects": "[ARRAY] 9 items",
+        "team": "[ARRAY] 6 items",
+        "featured-puzzle": "6488cbaf1124f2c31059d484",
+        "menu-icon": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86..."
+      }
+    },
+    "spaces": {
+      "displayName": "Spaces",
+      "id": "64f8aa28842667216358d127",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug",
+          "vertical-market",
+          "featured-paragraph"
+        ],
+        "imageFields": [
+          "featured-image"
+        ],
+        "referenceFields": [
+          "puzzle-feature",
+          "products"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 80,
+      "opportunities": [
+        {
+          "type": "image-analysis",
+          "field": "featured-image",
+          "priority": "high",
+          "description": "Generate alt text and image metadata with AI vision"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "space",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "vertical-market": {
+            "type": "string"
+          },
+          "featured-paragraph": {
+            "type": "string"
+          },
+          "featured-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "puzzle-feature": {
+            "type": "array",
+            "of": [
+              {
+                "type": "puzzlefeature"
+              }
+            ]
+          },
+          "products": {
+            "type": "array",
+            "of": [
+              {
+                "type": "product"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": [
+          {
+            "field": "puzzle-feature",
+            "type": "array",
+            "targetCollection": "puzzlefeature",
+            "description": "References to puzzle-feature collection"
+          },
+          {
+            "field": "products",
+            "type": "array",
+            "targetCollection": "product",
+            "description": "References to products collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "name": "Task Seating",
+        "slug": "task-chairs",
+        "vertical-market": "6488cbaf1124f2c31059d4a9",
+        "puzzle-feature": "[ARRAY] 1 items",
+        "products": "[ARRAY] 6 items",
+        "featured-paragraph": "<p id=\"\">Task seating in a corporate office is more than just a place to sit; it's a crucial compone...",
+        "featured-image": "[IMAGE] https://uploads-ssl.webflow.com/5d4c9442574a782d86..."
+      }
+    },
+    "microsite": {
+      "displayName": "Microsites",
+      "id": "65a6fbafdc534d2d3c25373b",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "salesperson",
+          "vertical-market",
+          "showroom",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [
+          "projects",
+          "publications",
+          "team",
+          "featured-products"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "note-to-customer"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "rich-text-enhancement",
+          "field": "note-to-customer",
+          "priority": "high",
+          "description": "Convert HTML to Sanity blocks and enhance content"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "microsite",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "salesperson": {
+            "type": "string"
+          },
+          "vertical-market": {
+            "type": "string"
+          },
+          "showroom": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "note-to-customer": {
+            "type": "array",
+            "of": [
+              {
+                "type": "block"
+              }
+            ]
+          },
+          "projects": {
+            "type": "array",
+            "of": [
+              {
+                "type": "project"
+              }
+            ]
+          },
+          "publications": {
+            "type": "array",
+            "of": [
+              {
+                "type": "publication"
+              }
+            ]
+          },
+          "team": {
+            "type": "array",
+            "of": [
+              {
+                "type": "teamMember"
+              }
+            ]
+          },
+          "featured-products": {
+            "type": "array",
+            "of": [
+              {
+                "type": "product"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": [
+          {
+            "field": "projects",
+            "type": "array",
+            "targetCollection": "project",
+            "description": "References to projects collection"
+          },
+          {
+            "field": "publications",
+            "type": "array",
+            "targetCollection": "publication",
+            "description": "References to publications collection"
+          },
+          {
+            "field": "team",
+            "type": "array",
+            "targetCollection": "teamMember",
+            "description": "References to team collection"
+          },
+          {
+            "field": "featured-products",
+            "type": "array",
+            "targetCollection": "product",
+            "description": "References to featured-products collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "name": "Lubbock Cooper ISD",
+        "projects": "[ARRAY] 5 items",
+        "publications": "[ARRAY] 2 items",
+        "salesperson": "65fc8c667ccf34b4f7b10c19",
+        "team": "[ARRAY] 6 items",
+        "vertical-market": "6488cbaf1124f2c31059d4a9",
+        "showroom": "678166d28902a9e8a45836e8",
+        "featured-products": "[ARRAY] 11 items",
+        "slug": "lubbock-cooper-isd",
+        "note-to-customer": "<p>Let us introduce ourselves! Tangram Interiors is a premier furniture dealership, ranked among the..."
+      }
+    },
+    "product-categories": {
+      "displayName": "Product Categories",
+      "id": "65fb2ff80af77f5edae663c6",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [
+          "parent-category"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "productcategorie",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "parent-category": {
+            "type": "array",
+            "of": [
+              {
+                "type": "parentcategory"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": [
+          {
+            "field": "parent-category",
+            "type": "array",
+            "targetCollection": "parentcategory",
+            "description": "References to parent-category collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "name": "Side + Guest Chairs",
+        "slug": "side-guest-chairs",
+        "parent-category": "[ARRAY] 1 items"
+      }
+    },
+    "frames": {
+      "displayName": "Frames",
+      "id": "6744ae3e3a21ffa4302e9a87",
+      "itemCount": 2,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "link-to-frame"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "frame",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "link-to-frame": {
+            "type": "url"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "link-to-frame": "https://indd.adobe.com/view/6cc92349-cc0d-48fe-b93d-7029f0595324",
+        "name": "Tangram Jazwares Magazine",
+        "slug": "jazwares"
+      }
+    },
+    "featured-image": {
+      "displayName": "Featured Images",
+      "id": "6758be81e8dfe0213e75f3ef",
+      "itemCount": 1,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "missing-content",
+          "field": "name",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "missing-content",
+          "field": "slug",
+          "priority": "high",
+          "description": "Generate missing content with AI"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "featuredimage",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Corporate",
+        "slug": "corporate"
+      }
+    }
+  },
+  "schemaRecommendations": {},
+  "migrationPriorities": [
+    {
+      "rank": 1,
+      "collection": "projects",
+      "displayName": "Projects",
+      "priority": 135,
+      "enhancementPotential": 100,
+      "reason": "High AI enhancement potential, Rich content for enhancement, Images need metadata, Complex relationships, Many high-priority opportunities"
+    },
+    {
+      "rank": 2,
+      "collection": "partners",
+      "displayName": "Partners",
+      "priority": 90,
+      "enhancementPotential": 100,
+      "reason": "High AI enhancement potential, Images need metadata"
+    },
+    {
+      "rank": 3,
+      "collection": "vertical-markets",
+      "displayName": "Vertical Markets",
+      "priority": 85,
+      "enhancementPotential": 100,
+      "reason": "High AI enhancement potential, Rich content for enhancement, Images need metadata, Complex relationships, Many high-priority opportunities"
+    },
+    {
+      "rank": 4,
+      "collection": "product",
+      "displayName": "Products",
+      "priority": 30,
+      "enhancementPotential": 100,
+      "reason": "High AI enhancement potential"
+    },
+    {
+      "rank": 5,
+      "collection": "team",
+      "displayName": "Employees",
+      "priority": 120,
+      "enhancementPotential": 86,
+      "reason": "High AI enhancement potential, Images need metadata, Complex relationships"
+    },
+    {
+      "rank": 6,
+      "collection": "podcast",
+      "displayName": "Podcasts",
+      "priority": 65,
+      "enhancementPotential": 80,
+      "reason": "High AI enhancement potential, Rich content for enhancement, Images need metadata, Complex relationships"
+    },
+    {
+      "rank": 7,
+      "collection": "microsite",
+      "displayName": "Microsites",
+      "priority": 55,
+      "enhancementPotential": 100,
+      "reason": "High AI enhancement potential, Rich content for enhancement, Complex relationships"
+    },
+    {
+      "rank": 8,
+      "collection": "featured-products",
+      "displayName": "Featured Products",
+      "priority": 50,
+      "enhancementPotential": 100,
+      "reason": "High AI enhancement potential, Images need metadata, Complex relationships"
+    },
+    {
+      "rank": 9,
+      "collection": "manufacturers",
+      "displayName": "Manufacturers",
+      "priority": 50,
+      "enhancementPotential": 100,
+      "reason": "High AI enhancement potential, Images need metadata, Complex relationships"
+    },
+    {
+      "rank": 10,
+      "collection": "rendering",
+      "displayName": "Renderings",
+      "priority": 50,
+      "enhancementPotential": 100,
+      "reason": "High AI enhancement potential, Images need metadata, Complex relationships, Many high-priority opportunities"
+    }
+  ],
+  "enhancementOpportunities": [
+    {
+      "collection": "projects",
+      "displayName": "Projects",
+      "totalOpportunities": 5,
+      "highPriority": 4,
+      "types": [
+        "missing-content",
+        "rich-text-enhancement",
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "partners",
+      "displayName": "Partners",
+      "totalOpportunities": 2,
+      "highPriority": 1,
+      "types": [
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "vertical-markets",
+      "displayName": "Vertical Markets",
+      "totalOpportunities": 16,
+      "highPriority": 15,
+      "types": [
+        "missing-content",
+        "rich-text-enhancement",
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "product",
+      "displayName": "Products",
+      "totalOpportunities": 4,
+      "highPriority": 2,
+      "types": [
+        "missing-content",
+        "professional-writing",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "team",
+      "displayName": "Employees",
+      "totalOpportunities": 2,
+      "highPriority": 1,
+      "types": [
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "podcast",
+      "displayName": "Podcasts",
+      "totalOpportunities": 5,
+      "highPriority": 2,
+      "types": [
+        "content-expansion",
+        "professional-writing",
+        "rich-text-enhancement",
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "microsite",
+      "displayName": "Microsites",
+      "totalOpportunities": 2,
+      "highPriority": 1,
+      "types": [
+        "rich-text-enhancement",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "featured-products",
+      "displayName": "Featured Products",
+      "totalOpportunities": 5,
+      "highPriority": 3,
+      "types": [
+        "missing-content",
+        "professional-writing",
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "manufacturers",
+      "displayName": "Manufacturers",
+      "totalOpportunities": 4,
+      "highPriority": 3,
+      "types": [
+        "missing-content",
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "rendering",
+      "displayName": "Renderings",
+      "totalOpportunities": 5,
+      "highPriority": 4,
+      "types": [
+        "missing-content",
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "sku",
+      "displayName": "SKUs",
+      "totalOpportunities": 5,
+      "highPriority": 4,
+      "types": [
+        "missing-content",
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "spaces",
+      "displayName": "Spaces",
+      "totalOpportunities": 2,
+      "highPriority": 1,
+      "types": [
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "featured-guest",
+      "displayName": "Featured Guests",
+      "totalOpportunities": 5,
+      "highPriority": 4,
+      "types": [
+        "missing-content",
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "service-links",
+      "displayName": "Service Links",
+      "totalOpportunities": 1,
+      "highPriority": 0,
+      "types": [
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "magazine",
+      "displayName": "Puzzles",
+      "totalOpportunities": 4,
+      "highPriority": 3,
+      "types": [
+        "missing-content",
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "service",
+      "displayName": "Business Units",
+      "totalOpportunities": 3,
+      "highPriority": 1,
+      "types": [
+        "professional-writing",
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "philanthropy",
+      "displayName": "Philanthropies",
+      "totalOpportunities": 2,
+      "highPriority": 1,
+      "types": [
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "files-pdfs",
+      "displayName": "Files + PDFs",
+      "totalOpportunities": 2,
+      "highPriority": 1,
+      "types": [
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "blog",
+      "displayName": "Blog Posts",
+      "totalOpportunities": 2,
+      "highPriority": 1,
+      "types": [
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "instagram-photos",
+      "displayName": "Instagram Photos",
+      "totalOpportunities": 2,
+      "highPriority": 1,
+      "types": [
+        "image-analysis",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "product-categories",
+      "displayName": "Product Categories",
+      "totalOpportunities": 1,
+      "highPriority": 0,
+      "types": [
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "category",
+      "displayName": "Categories",
+      "totalOpportunities": 1,
+      "highPriority": 0,
+      "types": [
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "event-type",
+      "displayName": "Event Types",
+      "totalOpportunities": 1,
+      "highPriority": 0,
+      "types": [
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "internal-videos",
+      "displayName": "Internal Videos",
+      "totalOpportunities": 1,
+      "highPriority": 0,
+      "types": [
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "wfh-childrens",
+      "displayName": "Children's WFH Orders",
+      "totalOpportunities": 1,
+      "highPriority": 0,
+      "types": [
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "blog-tags",
+      "displayName": "Blog Tags",
+      "totalOpportunities": 3,
+      "highPriority": 2,
+      "types": [
+        "missing-content",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "project-industry",
+      "displayName": "Project Industries",
+      "totalOpportunities": 1,
+      "highPriority": 0,
+      "types": [
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "issuu-publication",
+      "displayName": "Issuu Publications",
+      "totalOpportunities": 1,
+      "highPriority": 0,
+      "types": [
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "department",
+      "displayName": "Departments",
+      "totalOpportunities": 1,
+      "highPriority": 0,
+      "types": [
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "rendering-categories",
+      "displayName": "Rendering Categories",
+      "totalOpportunities": 3,
+      "highPriority": 2,
+      "types": [
+        "missing-content",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "locations",
+      "displayName": "Locations",
+      "totalOpportunities": 4,
+      "highPriority": 3,
+      "types": [
+        "missing-content",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "blog-categories",
+      "displayName": "Blog Categories",
+      "totalOpportunities": 1,
+      "highPriority": 0,
+      "types": [
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "project-category",
+      "displayName": "Project Categories",
+      "totalOpportunities": 1,
+      "highPriority": 0,
+      "types": [
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "client-list",
+      "displayName": "Client Lists",
+      "totalOpportunities": 5,
+      "highPriority": 4,
+      "types": [
+        "missing-content",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "frames",
+      "displayName": "Frames",
+      "totalOpportunities": 2,
+      "highPriority": 1,
+      "types": [
+        "missing-content",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "featured-image",
+      "displayName": "Featured Images",
+      "totalOpportunities": 3,
+      "highPriority": 2,
+      "types": [
+        "missing-content",
+        "seo-enhancement"
+      ]
+    },
+    {
+      "collection": "tangram-services",
+      "displayName": "Tangram Services",
+      "totalOpportunities": 2,
+      "highPriority": 0,
+      "types": [
+        "professional-writing",
+        "seo-enhancement"
+      ]
+    }
+  ],
+  "newSchemasNeeded": [
+    {
+      "collection": "featured-guest",
+      "suggestedName": "featuredguest",
+      "priority": 40
+    },
+    {
+      "collection": "service-links",
+      "suggestedName": "servicelink",
+      "priority": 40
+    },
+    {
+      "collection": "featured-products",
+      "suggestedName": "featuredproduct",
+      "priority": 50
+    },
+    {
+      "collection": "category",
+      "suggestedName": "category",
+      "priority": 30
+    },
+    {
+      "collection": "magazine",
+      "suggestedName": "magazine",
+      "priority": 40
+    },
+    {
+      "collection": "event-type",
+      "suggestedName": "eventtype",
+      "priority": 30
+    },
+    {
+      "collection": "podcast",
+      "suggestedName": "podcast",
+      "priority": 65
+    },
+    {
+      "collection": "philanthropy",
+      "suggestedName": "philanthropy",
+      "priority": 40
+    },
+    {
+      "collection": "internal-videos",
+      "suggestedName": "internalvideo",
+      "priority": 30
+    },
+    {
+      "collection": "wfh-childrens",
+      "suggestedName": "wfhchildren",
+      "priority": 30
+    },
+    {
+      "collection": "manufacturers",
+      "suggestedName": "manufacturer",
+      "priority": 50
+    },
+    {
+      "collection": "blog-tags",
+      "suggestedName": "blogtag",
+      "priority": 30
+    },
+    {
+      "collection": "files-pdfs",
+      "suggestedName": "filespdf",
+      "priority": 40
+    },
+    {
+      "collection": "project-industry",
+      "suggestedName": "projectindustry",
+      "priority": 30
+    },
+    {
+      "collection": "issuu-publication",
+      "suggestedName": "issuupublication",
+      "priority": 30
+    },
+    {
+      "collection": "department",
+      "suggestedName": "department",
+      "priority": 30
+    },
+    {
+      "collection": "rendering",
+      "suggestedName": "rendering",
+      "priority": 50
+    },
+    {
+      "collection": "sku",
+      "suggestedName": "sku",
+      "priority": 50
+    },
+    {
+      "collection": "rendering-categories",
+      "suggestedName": "renderingcategorie",
+      "priority": 30
+    },
+    {
+      "collection": "instagram-photos",
+      "suggestedName": "instagramphoto",
+      "priority": 40
+    },
+    {
+      "collection": "locations",
+      "suggestedName": "location",
+      "priority": 30
+    },
+    {
+      "collection": "blog-categories",
+      "suggestedName": "blogcategorie",
+      "priority": 30
+    },
+    {
+      "collection": "tangram-services",
+      "suggestedName": "tangramservice",
+      "priority": 0
+    },
+    {
+      "collection": "project-category",
+      "suggestedName": "projectcategory",
+      "priority": 30
+    },
+    {
+      "collection": "client-list",
+      "suggestedName": "clientlist",
+      "priority": 30
+    },
+    {
+      "collection": "vertical-markets",
+      "suggestedName": "verticalmarket",
+      "priority": 85
+    },
+    {
+      "collection": "spaces",
+      "suggestedName": "space",
+      "priority": 50
+    },
+    {
+      "collection": "microsite",
+      "suggestedName": "microsite",
+      "priority": 55
+    },
+    {
+      "collection": "product-categories",
+      "suggestedName": "productcategorie",
+      "priority": 40
+    },
+    {
+      "collection": "frames",
+      "suggestedName": "frame",
+      "priority": 30
+    },
+    {
+      "collection": "featured-image",
+      "suggestedName": "featuredimage",
+      "priority": 30
+    }
+  ]
+}

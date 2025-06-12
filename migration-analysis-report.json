@@ -1,0 +1,1724 @@
+{
+  "timestamp": "2025-06-04T18:46:47.246Z",
+  "collections": {
+    "Featured Guests": {
+      "id": "6488cbaf1124f2c31059be5a",
+      "itemCount": 14,
+      "fields": [
+        "title",
+        "company",
+        "name",
+        "headshot",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 4,
+        "imageFields": 1,
+        "missingContent": [
+          "title",
+          "name",
+          "slug"
+        ],
+        "lowQualityContent": [
+          "company"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "headshot",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "Service Links": {
+      "id": "6488cbaf1124f2c31059bea8",
+      "itemCount": 21,
+      "fields": [
+        "link",
+        "name",
+        "slug",
+        "spaces"
+      ],
+      "contentQuality": {
+        "textFields": 3,
+        "imageFields": 0,
+        "missingContent": [],
+        "lowQualityContent": [
+          "link",
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Projects": {
+      "id": "6488cbaf1124f2c31059bea9",
+      "itemCount": 166,
+      "fields": [
+        "photographer-website",
+        "google-reference",
+        "square-footage",
+        "street-address",
+        "name",
+        "longitude",
+        "city-state",
+        "lattitude",
+        "year-completed",
+        "photographer-credit",
+        "slug",
+        "team",
+        "tangram-region",
+        "industry-type",
+        "vertical-market",
+        "business-unit",
+        "partners",
+        "logo",
+        "category",
+        "project-write-up"
+      ],
+      "contentQuality": {
+        "textFields": 13,
+        "imageFields": 1,
+        "missingContent": [
+          "square-footage",
+          "year-completed"
+        ],
+        "lowQualityContent": [
+          "photographer-website",
+          "street-address",
+          "name",
+          "longitude",
+          "city-state",
+          "lattitude",
+          "photographer-credit",
+          "slug",
+          "tangram-region",
+          "industry-type"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "logo",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          },
+          {
+            "field": "project-write-up",
+            "type": "text-enhancement",
+            "reason": "Professional writing improvement"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "Featured Products": {
+      "id": "6488cbaf1124f2c31059beaa",
+      "itemCount": 986,
+      "fields": [
+        "product-website",
+        "name",
+        "description",
+        "business-unit",
+        "manufacturer",
+        "product-category",
+        "vertical-market",
+        "featured-image",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 5,
+        "imageFields": 1,
+        "missingContent": [
+          "name",
+          "slug"
+        ],
+        "lowQualityContent": [
+          "product-website",
+          "manufacturer"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "description",
+            "type": "text-enhancement",
+            "reason": "Professional writing improvement"
+          },
+          {
+            "field": "featured-image",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "Categories": {
+      "id": "6488cbaf1124f2c31059beab",
+      "itemCount": 26,
+      "fields": [
+        "show-in-shop-navigation",
+        "show-home-page-thumb",
+        "featured-category",
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 2,
+        "imageFields": 0,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Partners": {
+      "id": "6488cbaf1124f2c31059bec3",
+      "itemCount": 85,
+      "fields": [
+        "website",
+        "name",
+        "slug",
+        "logo"
+      ],
+      "contentQuality": {
+        "textFields": 3,
+        "imageFields": 1,
+        "missingContent": [],
+        "lowQualityContent": [
+          "website",
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "logo",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "Puzzles": {
+      "id": "6488cbaf1124f2c31059bedb",
+      "itemCount": 15,
+      "fields": [
+        "hide-from-general-site",
+        "issue-embed-code",
+        "name",
+        "slug",
+        "cover-image",
+        "volume-number",
+        "featured-image"
+      ],
+      "contentQuality": {
+        "textFields": 4,
+        "imageFields": 2,
+        "missingContent": [
+          "name",
+          "slug",
+          "volume-number"
+        ],
+        "lowQualityContent": [
+          "issue-embed-code"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "cover-image",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          },
+          {
+            "field": "featured-image",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "Event Types": {
+      "id": "6488cbaf1124f2c31059bef1",
+      "itemCount": 5,
+      "fields": [
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 2,
+        "imageFields": 0,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Podcasts": {
+      "id": "6488cbaf1124f2c31059bf0d",
+      "itemCount": 12,
+      "fields": [
+        "publish-date",
+        "anchor-link",
+        "name",
+        "description-new",
+        "description",
+        "featured-image",
+        "slug",
+        "featured-guest",
+        "hosts"
+      ],
+      "contentQuality": {
+        "textFields": 6,
+        "imageFields": 1,
+        "missingContent": [],
+        "lowQualityContent": [
+          "publish-date",
+          "anchor-link",
+          "description",
+          "slug"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "description-new",
+            "type": "text-enhancement",
+            "reason": "Professional writing improvement"
+          },
+          {
+            "field": "description",
+            "type": "text-enhancement",
+            "reason": "Professional writing improvement"
+          },
+          {
+            "field": "featured-image",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "Business Units": {
+      "id": "6488cbaf1124f2c31059bf23",
+      "itemCount": 6,
+      "fields": [
+        "ranking",
+        "short-overview",
+        "name",
+        "about",
+        "expertise",
+        "headline",
+        "menu-icon",
+        "slug",
+        "sales-team",
+        "market-services",
+        "limited-service-profile",
+        "seo-summary"
+      ],
+      "contentQuality": {
+        "textFields": 7,
+        "imageFields": 1,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "menu-icon",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 38
+    },
+    "Philanthropies": {
+      "id": "6488cbaf1124f2c31059bf64",
+      "itemCount": 8,
+      "fields": [
+        "website",
+        "name",
+        "logo",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 3,
+        "imageFields": 1,
+        "missingContent": [],
+        "lowQualityContent": [
+          "website",
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "logo",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "Internal Videos": {
+      "id": "6488cbaf1124f2c31059bf99",
+      "itemCount": 5,
+      "fields": [
+        "video-link",
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 2,
+        "imageFields": 1,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "video-link",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "Children's WFH Orders": {
+      "id": "6488cbaf1124f2c31059bfba",
+      "itemCount": 877,
+      "fields": [
+        "employee-email-address",
+        "employee-number",
+        "name",
+        "employee-name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 4,
+        "imageFields": 0,
+        "missingContent": [],
+        "lowQualityContent": [
+          "employee-email-address",
+          "name",
+          "employee-name",
+          "slug"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Manufacturers": {
+      "id": "6488cbaf1124f2c31059bfe3",
+      "itemCount": 251,
+      "fields": [
+        "website",
+        "name",
+        "vertical-market",
+        "category",
+        "business-unit",
+        "logo",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 4,
+        "imageFields": 1,
+        "missingContent": [
+          "name",
+          "slug"
+        ],
+        "lowQualityContent": [
+          "website",
+          "category"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "logo",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "Blog Tags": {
+      "id": "6488cbaf1124f2c31059bfff",
+      "itemCount": 5,
+      "fields": [
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 2,
+        "imageFields": 0,
+        "missingContent": [
+          "name",
+          "slug"
+        ],
+        "lowQualityContent": [],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Files + PDFs": {
+      "id": "6488cbaf1124f2c31059c018",
+      "itemCount": 21,
+      "fields": [
+        "name",
+        "slug",
+        "upload-file"
+      ],
+      "contentQuality": {
+        "textFields": 2,
+        "imageFields": 1,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "upload-file",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "Project Industries": {
+      "id": "6488cbaf1124f2c31059c039",
+      "itemCount": 6,
+      "fields": [
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 2,
+        "imageFields": 0,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Issuu Publications": {
+      "id": "6488cbaf1124f2c31059c03a",
+      "itemCount": 2,
+      "fields": [
+        "issuu-link",
+        "issuu-article-url-title-steelcase-next-generation-education",
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 4,
+        "imageFields": 0,
+        "missingContent": [],
+        "lowQualityContent": [
+          "issuu-link",
+          "issuu-article-url-title-steelcase-next-generation-education",
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Employees": {
+      "id": "6488cbaf1124f2c31059c03b",
+      "itemCount": 421,
+      "fields": [
+        "pacific-holdings",
+        "board-of-directors",
+        "senior-leadership",
+        "unit-leader",
+        "executive-team",
+        "sales-leadership",
+        "name",
+        "title",
+        "avatar",
+        "business-unit",
+        "department-2",
+        "location",
+        "slug",
+        "edit-url",
+        "linkedin-profile",
+        "tangram-ten"
+      ],
+      "contentQuality": {
+        "textFields": 8,
+        "imageFields": 1,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "title",
+          "business-unit",
+          "location",
+          "slug",
+          "edit-url",
+          "linkedin-profile"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "avatar",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 89
+    },
+    "Products": {
+      "id": "6488cbaf1124f2c31059c03c",
+      "itemCount": 896,
+      "fields": [
+        "tax-category",
+        "shippable",
+        "ec-product-type",
+        "name",
+        "description",
+        "manufacturer-2",
+        "slug",
+        "default-sku"
+      ],
+      "contentQuality": {
+        "textFields": 7,
+        "imageFields": 0,
+        "missingContent": [
+          "name",
+          "slug"
+        ],
+        "lowQualityContent": [
+          "tax-category",
+          "ec-product-type",
+          "manufacturer-2",
+          "default-sku"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "description",
+            "type": "text-enhancement",
+            "reason": "Professional writing improvement"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "Departments": {
+      "id": "6488cbaf1124f2c31059c03d",
+      "itemCount": 22,
+      "fields": [
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 2,
+        "imageFields": 0,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Renderings": {
+      "id": "6488cbaf1124f2c31059c03e",
+      "itemCount": 3,
+      "fields": [
+        "name",
+        "slug",
+        "project-category",
+        "rendering-examples",
+        "example-1-title",
+        "example-2-title",
+        "rendering-examples-2",
+        "example-3-title",
+        "rendering-examples-3",
+        "header-image"
+      ],
+      "contentQuality": {
+        "textFields": 6,
+        "imageFields": 1,
+        "missingContent": [
+          "name",
+          "slug",
+          "example-2-title"
+        ],
+        "lowQualityContent": [
+          "project-category",
+          "example-1-title",
+          "example-3-title"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "header-image",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "SKUs": {
+      "id": "6488cbaf1124f2c31059c03f",
+      "itemCount": 896,
+      "fields": [
+        "ec-sku-billing-method",
+        "compare-at-price",
+        "width",
+        "length",
+        "height",
+        "price",
+        "weight",
+        "ec-sku-subscription-plan",
+        "sku-values",
+        "sku",
+        "more-images",
+        "download-files",
+        "name",
+        "main-image",
+        "product",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 4,
+        "imageFields": 1,
+        "missingContent": [
+          "ec-sku-billing-method",
+          "name",
+          "slug"
+        ],
+        "lowQualityContent": [
+          "product"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "main-image",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 100
+    },
+    "Rendering Categories": {
+      "id": "6488cbaf1124f2c31059c040",
+      "itemCount": 7,
+      "fields": [
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 2,
+        "imageFields": 0,
+        "missingContent": [
+          "name",
+          "slug"
+        ],
+        "lowQualityContent": [],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Blog Posts": {
+      "id": "6488cbaf1124f2c31059c041",
+      "itemCount": 825,
+      "fields": [
+        "falkbuilt-feature",
+        "content-2",
+        "name",
+        "slug",
+        "main-image-2",
+        "category-2"
+      ],
+      "contentQuality": {
+        "textFields": 4,
+        "imageFields": 1,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug",
+          "category-2"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "main-image-2",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 80
+    },
+    "Instagram Photos": {
+      "id": "6488cbaf1124f2c31059c042",
+      "itemCount": 54,
+      "fields": [
+        "info",
+        "name",
+        "slug",
+        "photo-2"
+      ],
+      "contentQuality": {
+        "textFields": 3,
+        "imageFields": 1,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "photo-2",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 75
+    },
+    "Locations": {
+      "id": "6488cbaf1124f2c31059c044",
+      "itemCount": 7,
+      "fields": [
+        "sales-team-page",
+        "abreviation",
+        "street-address",
+        "city-state-zip",
+        "name",
+        "regional-leader",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 6,
+        "imageFields": 0,
+        "missingContent": [
+          "abreviation",
+          "name",
+          "slug"
+        ],
+        "lowQualityContent": [
+          "street-address",
+          "city-state-zip",
+          "regional-leader"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Blog Categories": {
+      "id": "6488cbaf1124f2c31059c046",
+      "itemCount": 31,
+      "fields": [
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 2,
+        "imageFields": 0,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Tangram Services": {
+      "id": "6488cbaf1124f2c31059c047",
+      "itemCount": 32,
+      "fields": [
+        "summary",
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 3,
+        "imageFields": 0,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 67
+    },
+    "Project Categories": {
+      "id": "6488cbaf1124f2c31059c062",
+      "itemCount": 5,
+      "fields": [
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 2,
+        "imageFields": 0,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Client Lists": {
+      "id": "6488cbaf1124f2c31059c0b4",
+      "itemCount": 1176,
+      "fields": [
+        "city",
+        "name",
+        "latitude",
+        "longitude",
+        "state",
+        "address",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 7,
+        "imageFields": 0,
+        "missingContent": [
+          "city",
+          "latitude",
+          "state",
+          "slug"
+        ],
+        "lowQualityContent": [
+          "name",
+          "longitude",
+          "address"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Vertical Markets": {
+      "id": "6488cbaf1124f2c31059c0cc",
+      "itemCount": 5,
+      "fields": [
+        "featured-video",
+        "title-5",
+        "title-6",
+        "title-7",
+        "name",
+        "paragraph-1",
+        "paragraph-2",
+        "headline",
+        "paragraph-3",
+        "paragraph-4",
+        "paragraph-5",
+        "paragraph-6",
+        "paragraph-7",
+        "overview-paragraph",
+        "title-1",
+        "title-2",
+        "title-3",
+        "title-4",
+        "slug",
+        "featured-image-2",
+        "featured-image-3",
+        "featured-image-4",
+        "featured-image-5",
+        "featured-image",
+        "featured-products",
+        "featured-manufacturers",
+        "featured-projects",
+        "team",
+        "featured-puzzle",
+        "menu-icon"
+      ],
+      "contentQuality": {
+        "textFields": 19,
+        "imageFields": 7,
+        "missingContent": [
+          "slug"
+        ],
+        "lowQualityContent": [
+          "title-5",
+          "title-6",
+          "title-7",
+          "name",
+          "headline",
+          "title-1",
+          "title-2",
+          "title-3",
+          "title-4",
+          "featured-puzzle"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "featured-video",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          },
+          {
+            "field": "featured-image-2",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          },
+          {
+            "field": "featured-image-3",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          },
+          {
+            "field": "featured-image-4",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          },
+          {
+            "field": "featured-image-5",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          },
+          {
+            "field": "featured-image",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          },
+          {
+            "field": "menu-icon",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 69
+    },
+    "Spaces": {
+      "id": "64f8aa28842667216358d127",
+      "itemCount": 24,
+      "fields": [
+        "name",
+        "slug",
+        "vertical-market",
+        "puzzle-feature",
+        "products",
+        "featured-paragraph",
+        "featured-image"
+      ],
+      "contentQuality": {
+        "textFields": 4,
+        "imageFields": 1,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug",
+          "vertical-market"
+        ],
+        "enhancementOpportunities": [
+          {
+            "field": "featured-image",
+            "type": "image-analysis",
+            "reason": "Missing alt text and metadata"
+          }
+        ]
+      },
+      "enhancementPotential": 80
+    },
+    "Microsites": {
+      "id": "65a6fbafdc534d2d3c25373b",
+      "itemCount": 29,
+      "fields": [
+        "name",
+        "projects",
+        "publications",
+        "salesperson",
+        "team",
+        "vertical-market",
+        "showroom",
+        "featured-products",
+        "slug",
+        "note-to-customer"
+      ],
+      "contentQuality": {
+        "textFields": 6,
+        "imageFields": 0,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "salesperson",
+          "vertical-market",
+          "showroom",
+          "slug"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 83
+    },
+    "Product Categories": {
+      "id": "65fb2ff80af77f5edae663c6",
+      "itemCount": 55,
+      "fields": [
+        "name",
+        "slug",
+        "parent-category"
+      ],
+      "contentQuality": {
+        "textFields": 2,
+        "imageFields": 0,
+        "missingContent": [],
+        "lowQualityContent": [
+          "name",
+          "slug"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Frames": {
+      "id": "6744ae3e3a21ffa4302e9a87",
+      "itemCount": 2,
+      "fields": [
+        "link-to-frame",
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 3,
+        "imageFields": 0,
+        "missingContent": [
+          "slug"
+        ],
+        "lowQualityContent": [
+          "link-to-frame",
+          "name"
+        ],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    },
+    "Featured Images": {
+      "id": "6758be81e8dfe0213e75f3ef",
+      "itemCount": 1,
+      "fields": [
+        "name",
+        "slug"
+      ],
+      "contentQuality": {
+        "textFields": 2,
+        "imageFields": 0,
+        "missingContent": [
+          "name",
+          "slug"
+        ],
+        "lowQualityContent": [],
+        "enhancementOpportunities": []
+      },
+      "enhancementPotential": 100
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "collection": "Featured Guests",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Featured Guests",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Service Links",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Projects",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Projects",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Featured Products",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Featured Products",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Categories",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Partners",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Partners",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Puzzles",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Puzzles",
+      "action": "Image analysis and metadata generation",
+      "reason": "2 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Event Types",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Podcasts",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Podcasts",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Business Units",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Philanthropies",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Philanthropies",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Internal Videos",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Internal Videos",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Children's WFH Orders",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Manufacturers",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Manufacturers",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Blog Tags",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Files + PDFs",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Files + PDFs",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Project Industries",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Issuu Publications",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Employees",
+      "action": "AI-enhanced migration recommended",
+      "reason": "89% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Employees",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Products",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Departments",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Renderings",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Renderings",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "SKUs",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "SKUs",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Rendering Categories",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Blog Posts",
+      "action": "AI-enhanced migration recommended",
+      "reason": "80% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Blog Posts",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Instagram Photos",
+      "action": "AI-enhanced migration recommended",
+      "reason": "75% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Instagram Photos",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Locations",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Blog Categories",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Tangram Services",
+      "action": "AI-enhanced migration recommended",
+      "reason": "67% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Project Categories",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Client Lists",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Vertical Markets",
+      "action": "AI-enhanced migration recommended",
+      "reason": "69% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Vertical Markets",
+      "action": "Image analysis and metadata generation",
+      "reason": "7 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Spaces",
+      "action": "AI-enhanced migration recommended",
+      "reason": "80% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "medium",
+      "collection": "Spaces",
+      "action": "Image analysis and metadata generation",
+      "reason": "1 images need alt text and categorization",
+      "benefits": [
+        "Accessibility compliance",
+        "Better image search",
+        "Content organization"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Microsites",
+      "action": "AI-enhanced migration recommended",
+      "reason": "83% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Product Categories",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Frames",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    },
+    {
+      "priority": "high",
+      "collection": "Featured Images",
+      "action": "AI-enhanced migration recommended",
+      "reason": "100% of content can be improved",
+      "benefits": [
+        "Better SEO",
+        "Professional presentation",
+        "Consistent brand voice"
+      ]
+    }
+  ]
+}

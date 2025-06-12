@@ -1,0 +1,5138 @@
+{
+  "collections": {
+    "featured-guest": {
+      "displayName": "Featured Guests",
+      "id": "6488cbaf1124f2c31059be5a",
+      "itemCount": 14,
+      "fieldAnalysis": {
+        "textFields": [
+          "title",
+          "company",
+          "name",
+          "slug"
+        ],
+        "imageFields": [
+          "headshot"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 95,
+      "opportunities": [
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "featuredguest",
+        "existingSchema": null,
+        "fieldMappings": {
+          "title": {
+            "type": "string"
+          },
+          "company": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "headshot": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "title": "CEO",
+        "company": "PLBY Group",
+        "name": "Ben Kohn",
+        "headshot": {
+          "fileId": "6488cbaf1124f2c31059e51f",
+          "url": "https://uploads-ssl.webflow.com/5d4c9442574a782d86d480d5/642b5a695e5869bc20d991d6_20230403T1059-817327f5-0651-4faf-9d0a-b6c87450f2a2.png",
+          "alt": null
+        },
+        "slug": "ben-kohn"
+      },
+      "priority": "medium"
+    },
+    "hello": {
+      "displayName": "New Intro Packages",
+      "id": "6488cbaf1124f2c31059be7e",
+      "itemCount": 0,
+      "status": "empty"
+    },
+    "service-links": {
+      "displayName": "Service Links",
+      "id": "6488cbaf1124f2c31059bea8",
+      "itemCount": 21,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [
+          "spaces"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "link"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "servicelinks",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "spaces": {
+            "type": "array",
+            "of": [
+              {
+                "type": "spaces"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "spaces",
+            "type": "array",
+            "targetCollection": "spaces",
+            "description": "References to spaces collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "link": "https://www.steelcase.com/insights-research/?objectType=insights-research&post-status=publish&taxono...",
+        "name": "Steelcase - Healthcare Research",
+        "slug": "steelcase---healthcare-research",
+        "spaces": "[ARRAY] 6 items"
+      },
+      "priority": "medium"
+    },
+    "projects": {
+      "displayName": "Projects",
+      "id": "6488cbaf1124f2c31059bea9",
+      "itemCount": 166,
+      "fieldAnalysis": {
+        "textFields": [
+          "square-footage",
+          "street-address",
+          "name",
+          "city-state",
+          "photographer-credit",
+          "slug",
+          "tangram-region",
+          "industry-type"
+        ],
+        "imageFields": [
+          "logo"
+        ],
+        "referenceFields": [
+          "team",
+          "vertical-market",
+          "business-unit",
+          "partners",
+          "category"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "google-reference"
+        ],
+        "urlFields": [
+          "photographer-website"
+        ],
+        "emailFields": [],
+        "phoneFields": [
+          "longitude",
+          "lattitude",
+          "year-completed"
+        ],
+        "richTextFields": [
+          "project-write-up"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        },
+        {
+          "type": "content-optimization",
+          "field": "project-write-up",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "projects",
+        "existingSchema": "project",
+        "fieldMappings": {
+          "square-footage": {
+            "type": "string"
+          },
+          "street-address": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "city-state": {
+            "type": "string"
+          },
+          "photographer-credit": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "tangram-region": {
+            "type": "string"
+          },
+          "industry-type": {
+            "type": "string"
+          },
+          "project-write-up": {
+            "type": "text",
+            "rows": 4
+          },
+          "logo": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "team": {
+            "type": "array",
+            "of": [
+              {
+                "type": "team"
+              }
+            ]
+          },
+          "vertical-market": {
+            "type": "array",
+            "of": [
+              {
+                "type": "verticalmarket"
+              }
+            ]
+          },
+          "business-unit": {
+            "type": "array",
+            "of": [
+              {
+                "type": "businessunit"
+              }
+            ]
+          },
+          "partners": {
+            "type": "array",
+            "of": [
+              {
+                "type": "partners"
+              }
+            ]
+          },
+          "category": {
+            "type": "array",
+            "of": [
+              {
+                "type": "category"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "team",
+            "type": "array",
+            "targetCollection": "team",
+            "description": "References to team collection"
+          },
+          {
+            "field": "vertical-market",
+            "type": "array",
+            "targetCollection": "verticalmarket",
+            "description": "References to vertical-market collection"
+          },
+          {
+            "field": "business-unit",
+            "type": "array",
+            "targetCollection": "businessunit",
+            "description": "References to business-unit collection"
+          },
+          {
+            "field": "partners",
+            "type": "array",
+            "targetCollection": "partners",
+            "description": "References to partners collection"
+          },
+          {
+            "field": "category",
+            "type": "array",
+            "targetCollection": "category",
+            "description": "References to category collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "photographer-website": "https://www.rw-collective.com/",
+        "google-reference": false,
+        "square-footage": "20,000",
+        "street-address": "1161 Corporate Dr",
+        "name": "Ikon Technologies"
+      },
+      "priority": "high"
+    },
+    "featured-products": {
+      "displayName": "Featured Products",
+      "id": "6488cbaf1124f2c31059beaa",
+      "itemCount": 986,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "manufacturer",
+          "slug"
+        ],
+        "imageFields": [
+          "featured-image"
+        ],
+        "referenceFields": [
+          "business-unit",
+          "product-category",
+          "vertical-market"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "product-website"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "description"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 95,
+      "opportunities": [
+        {
+          "type": "content-optimization",
+          "field": "description",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "featuredproducts",
+        "existingSchema": "product",
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "manufacturer": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text",
+            "rows": 4
+          },
+          "featured-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "business-unit": {
+            "type": "array",
+            "of": [
+              {
+                "type": "businessunit"
+              }
+            ]
+          },
+          "product-category": {
+            "type": "array",
+            "of": [
+              {
+                "type": "productcategory"
+              }
+            ]
+          },
+          "vertical-market": {
+            "type": "array",
+            "of": [
+              {
+                "type": "verticalmarket"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "business-unit",
+            "type": "array",
+            "targetCollection": "businessunit",
+            "description": "References to business-unit collection"
+          },
+          {
+            "field": "product-category",
+            "type": "array",
+            "targetCollection": "productcategory",
+            "description": "References to product-category collection"
+          },
+          {
+            "field": "vertical-market",
+            "type": "array",
+            "targetCollection": "verticalmarket",
+            "description": "References to vertical-market collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "product-website": "https://arcadiacontract.com/product/haven-lounge/",
+        "name": "Haven",
+        "description": "Sit at ease in a sanctuary of understated elegance with Haven. Thoughtfully designed and smartly imp...",
+        "business-unit": "[ARRAY] 1 items",
+        "manufacturer": "6488cbaf1124f2c31059cce0"
+      },
+      "priority": "high"
+    },
+    "category": {
+      "displayName": "Categories",
+      "id": "6488cbaf1124f2c31059beab",
+      "itemCount": 26,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "show-in-shop-navigation",
+          "show-home-page-thumb",
+          "featured-category"
+        ],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 55,
+      "opportunities": [
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "category",
+        "existingSchema": "productCategory",
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "show-in-shop-navigation": false,
+        "show-home-page-thumb": false,
+        "featured-category": false,
+        "name": "Task Chair",
+        "slug": "task-chair"
+      },
+      "priority": "medium"
+    },
+    "partners": {
+      "displayName": "Partners",
+      "id": "6488cbaf1124f2c31059bec3",
+      "itemCount": 85,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [
+          "logo"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "website"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "partners",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "website": "https://devenneygroup.com/",
+        "name": "Devenney Group",
+        "slug": "devenney-group",
+        "logo": {
+          "fileId": "67f56827e00a85b65937b88f",
+          "url": "https://cdn.prod.website-files.com/5d4c9442574a782d86d480d5/67f56827e00a85b65937b88f_Devenney-Logo_3x3.jpg",
+          "alt": null
+        }
+      },
+      "priority": "high"
+    },
+    "magazine": {
+      "displayName": "Puzzles",
+      "id": "6488cbaf1124f2c31059bedb",
+      "itemCount": 15,
+      "fieldAnalysis": {
+        "textFields": [
+          "issue-embed-code",
+          "name",
+          "slug",
+          "volume-number"
+        ],
+        "imageFields": [
+          "cover-image",
+          "featured-image"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "hide-from-general-site"
+        ],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 95,
+      "opportunities": [
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "magazine",
+        "existingSchema": null,
+        "fieldMappings": {
+          "issue-embed-code": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "volume-number": {
+            "type": "string"
+          },
+          "cover-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "hide-from-general-site": false,
+        "issue-embed-code": "//e.issuu.com/embed.html?d=k-12_puzzle&u=tangraminteriors",
+        "name": "K-12",
+        "slug": "k-12",
+        "cover-image": {
+          "fileId": "682d1bde51c7ba0bd23b0472",
+          "url": "https://cdn.prod.website-files.com/5d4c9442574a782d86d480d5/682d1bde51c7ba0bd23b0472_K-12%20Mockup.jpg",
+          "alt": null
+        }
+      },
+      "priority": "medium"
+    },
+    "event-type": {
+      "displayName": "Event Types",
+      "id": "6488cbaf1124f2c31059bef1",
+      "itemCount": 5,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "eventtype",
+        "existingSchema": "event",
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Lunch + Learn",
+        "slug": "lunch-learn"
+      },
+      "priority": "medium"
+    },
+    "podcast": {
+      "displayName": "Podcasts",
+      "id": "6488cbaf1124f2c31059bf0d",
+      "itemCount": 12,
+      "fieldAnalysis": {
+        "textFields": [
+          "publish-date",
+          "name",
+          "description",
+          "slug"
+        ],
+        "imageFields": [
+          "featured-image"
+        ],
+        "referenceFields": [
+          "featured-guest",
+          "hosts"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "anchor-link"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "description-new"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-enhancement",
+          "field": "description",
+          "priority": "high",
+          "description": "AI-enhance description with professional language"
+        },
+        {
+          "type": "content-optimization",
+          "field": "description-new",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "podcast",
+        "existingSchema": null,
+        "fieldMappings": {
+          "publish-date": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "description-new": {
+            "type": "text",
+            "rows": 4
+          },
+          "featured-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-guest": {
+            "type": "array",
+            "of": [
+              {
+                "type": "featuredguest"
+              }
+            ]
+          },
+          "hosts": {
+            "type": "array",
+            "of": [
+              {
+                "type": "hosts"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "featured-guest",
+            "type": "array",
+            "targetCollection": "featuredguest",
+            "description": "References to featured-guest collection"
+          },
+          {
+            "field": "hosts",
+            "type": "array",
+            "targetCollection": "hosts",
+            "description": "References to hosts collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "publish-date": "2021-08-09T00:00:00.000Z",
+        "anchor-link": "https://anchor.fm/tangraminteriors/episodes/A-New-Day-at-PLBY---Insights-from-CEO--Ben-Kohn-e15meek",
+        "name": "S2E8: A New Day at PLBY - Insights from CEO, Ben Kohn",
+        "description-new": "<p>Tangram CMO, Paul Smith, sat down with the CEO of PLBY Group, Ben Kohn, to discuss what it was li...",
+        "description": "A-New-Day-at-PLBY---Insights-from-CEO--Ben-Kohn-e15meek"
+      },
+      "priority": "medium"
+    },
+    "service": {
+      "displayName": "Business Units",
+      "id": "6488cbaf1124f2c31059bf23",
+      "itemCount": 6,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "headline",
+          "slug"
+        ],
+        "imageFields": [
+          "menu-icon"
+        ],
+        "referenceFields": [
+          "sales-team",
+          "market-services"
+        ],
+        "dateFields": [],
+        "numberFields": [
+          "ranking"
+        ],
+        "booleanFields": [
+          "limited-service-profile"
+        ],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "short-overview",
+          "about",
+          "expertise",
+          "seo-summary"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        },
+        {
+          "type": "content-optimization",
+          "field": "short-overview",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        },
+        {
+          "type": "content-optimization",
+          "field": "about",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        },
+        {
+          "type": "content-optimization",
+          "field": "expertise",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        },
+        {
+          "type": "content-optimization",
+          "field": "seo-summary",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "service",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "headline": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "short-overview": {
+            "type": "text",
+            "rows": 4
+          },
+          "about": {
+            "type": "text",
+            "rows": 4
+          },
+          "expertise": {
+            "type": "text",
+            "rows": 4
+          },
+          "seo-summary": {
+            "type": "text",
+            "rows": 4
+          },
+          "menu-icon": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "sales-team": {
+            "type": "array",
+            "of": [
+              {
+                "type": "salesteam"
+              }
+            ]
+          },
+          "market-services": {
+            "type": "array",
+            "of": [
+              {
+                "type": "marketservices"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "sales-team",
+            "type": "array",
+            "targetCollection": "salesteam",
+            "description": "References to sales-team collection"
+          },
+          {
+            "field": "market-services",
+            "type": "array",
+            "targetCollection": "marketservices",
+            "description": "References to market-services collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "ranking": 7,
+        "short-overview": "At Tangram Move + Facility Services, we're your all-in-one solution for facility needs. Whether you'...",
+        "name": "Move + Facility Services",
+        "about": "<p id=\"\">At Tangram Move + Facility Services, we're your all-in-one solution for facility needs. Whe...",
+        "expertise": "Tangram Move + Facility Services offers comprehensive solutions for facility needs. We specialize in..."
+      },
+      "priority": "medium"
+    },
+    "philanthropy": {
+      "displayName": "Philanthropies",
+      "id": "6488cbaf1124f2c31059bf64",
+      "itemCount": 8,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [
+          "logo"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "website"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "philanthropy",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "website": "https://www.ifhomeless.org/",
+        "name": "Illumination Foundation",
+        "logo": {
+          "fileId": "6488cbaf1124f2c31059e61b",
+          "url": "https://uploads-ssl.webflow.com/5d4c9442574a782d86d480d5/642b5b325aebb2e07d1a3043_20230403T1103-2efa1c77-5b1d-470e-8659-4f55ed1a6a07.jpeg",
+          "alt": null
+        },
+        "slug": "illumination-foundation"
+      },
+      "priority": "medium"
+    },
+    "internal-videos": {
+      "displayName": "Internal Videos",
+      "id": "6488cbaf1124f2c31059bf99",
+      "itemCount": 5,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [
+          "video-link"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "internalvideos",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "video-link": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "video-link": {
+          "url": "https://vimeo.com/874955685?share=copy",
+          "metadata": {
+            "width": 1920,
+            "height": 1013,
+            "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F874955685%3Fapp_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F874955685&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1767892410-52dfc247ef6def228bdae069ec597a2a07d31d5ab7bdbf6d0fef801d1dfc20b7-d_1280&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=vimeo\" width=\"1920\" height=\"1013\" scrolling=\"no\" title=\"Vimeo embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+            "aspectRatio": 0,
+            "title": "Tangram's New Dallas Showroom",
+            "provider_name": "Vimeo",
+            "type": "video",
+            "thumbnail_url": "https://i.vimeocdn.com/video/1767892410-52dfc247ef6def228bdae069ec597a2a07d31d5ab7bdbf6d0fef801d1dfc20b7-d_1280",
+            "description": "We are thrilled to share our new East Quarter Showroom with the DFW community. The design is a reflection of the surrounding neighborhood, its historical ties to the automotive industry, and Tangram's creative culture. With subtle nods to the 1920s, the design is a translation of \"Old Meets New.\"",
+            "author_name": "Tangram Marketing"
+          }
+        },
+        "name": "Dallas Showroom",
+        "slug": "dallas-showroom"
+      },
+      "priority": "medium"
+    },
+    "wfh-childrens": {
+      "displayName": "Children's WFH Orders",
+      "id": "6488cbaf1124f2c31059bfba",
+      "itemCount": 878,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "employee-name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [
+          "employee-number"
+        ],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [
+          "employee-email-address"
+        ],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "employee-name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "wfhchildrens",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "employee-name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "employee-email-address": "aleortiz@childrens.com",
+        "employee-number": 75125,
+        "name": "Alexandria Ortiz",
+        "employee-name": "Alexandria Ortiz",
+        "slug": "WFH-G7JL2J1E4Q"
+      },
+      "priority": "high"
+    },
+    "manufacturers": {
+      "displayName": "Manufacturers",
+      "id": "6488cbaf1124f2c31059bfe3",
+      "itemCount": 251,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "category",
+          "slug"
+        ],
+        "imageFields": [
+          "logo"
+        ],
+        "referenceFields": [
+          "vertical-market",
+          "business-unit"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "website"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 75,
+      "opportunities": [
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "manufacturers",
+        "existingSchema": "manufacturer",
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "vertical-market": {
+            "type": "array",
+            "of": [
+              {
+                "type": "verticalmarket"
+              }
+            ]
+          },
+          "business-unit": {
+            "type": "array",
+            "of": [
+              {
+                "type": "businessunit"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "vertical-market",
+            "type": "array",
+            "targetCollection": "verticalmarket",
+            "description": "References to vertical-market collection"
+          },
+          {
+            "field": "business-unit",
+            "type": "array",
+            "targetCollection": "businessunit",
+            "description": "References to business-unit collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "website": "https://www.nevers.com/",
+        "name": "Nevers",
+        "vertical-market": "[ARRAY] 2 items",
+        "category": "6488cbaf1124f2c31059c519",
+        "business-unit": "[ARRAY] 1 items"
+      },
+      "priority": "high"
+    },
+    "blog-tags": {
+      "displayName": "Blog Tags",
+      "id": "6488cbaf1124f2c31059bfff",
+      "itemCount": 5,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 55,
+      "opportunities": [
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "blogtags",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Furniture",
+        "slug": "furniture"
+      },
+      "priority": "low"
+    },
+    "files-pdfs": {
+      "displayName": "Files + PDFs",
+      "id": "6488cbaf1124f2c31059c018",
+      "itemCount": 21,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [
+          "upload-file"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "filespdfs",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "upload-file": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Health Spaces Booklet 2025",
+        "slug": "health-spaces-booklet",
+        "upload-file": {
+          "fileId": "680bc65454e8f6499a6384ca",
+          "url": "https://cdn.prod.website-files.com/5d4c9442574a782d86d480d5/680bc65454e8f6499a6384ca_Tangram-HealthSpaces-2025-Web.pdf",
+          "alt": null
+        }
+      },
+      "priority": "medium"
+    },
+    "project-industry": {
+      "displayName": "Project Industries",
+      "id": "6488cbaf1124f2c31059c039",
+      "itemCount": 6,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "projectindustry",
+        "existingSchema": "project",
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Hospitality",
+        "slug": "hospitality"
+      },
+      "priority": "medium"
+    },
+    "issuu-publication": {
+      "displayName": "Issuu Publications",
+      "id": "6488cbaf1124f2c31059c03a",
+      "itemCount": 2,
+      "fieldAnalysis": {
+        "textFields": [
+          "issuu-article-url-title-steelcase-next-generation-education",
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "issuu-link"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "issuu-article-url-title-steelcase-next-generation-education",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "issuupublication",
+        "existingSchema": null,
+        "fieldMappings": {
+          "issuu-article-url-title-steelcase-next-generation-education": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "issuu-link": "https://issuu.com/tangraminteriors/docs/revised_gsa_capabilities_brochure_02_18_2022_final",
+        "issuu-article-url-title-steelcase-next-generation-education": "revised_gsa_capabilities_brochure_02_18",
+        "name": "GSA Capabilities",
+        "slug": "gsa-capabilities"
+      },
+      "priority": "medium"
+    },
+    "team": {
+      "displayName": "Employees",
+      "id": "6488cbaf1124f2c31059c03b",
+      "itemCount": 421,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "title",
+          "business-unit",
+          "location",
+          "slug"
+        ],
+        "imageFields": [
+          "avatar"
+        ],
+        "referenceFields": [
+          "department-2"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "pacific-holdings",
+          "board-of-directors",
+          "senior-leadership",
+          "unit-leader",
+          "executive-team",
+          "sales-leadership"
+        ],
+        "urlFields": [
+          "edit-url",
+          "linkedin-profile"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "tangram-ten"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "title",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        },
+        {
+          "type": "content-optimization",
+          "field": "tangram-ten",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "team",
+        "existingSchema": "teamMember",
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "business-unit": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "tangram-ten": {
+            "type": "text",
+            "rows": 4
+          },
+          "avatar": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "department-2": {
+            "type": "array",
+            "of": [
+              {
+                "type": "department2"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "department-2",
+            "type": "array",
+            "targetCollection": "department2",
+            "description": "References to department-2 collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "pacific-holdings": false,
+        "board-of-directors": false,
+        "senior-leadership": false,
+        "unit-leader": false,
+        "executive-team": false
+      },
+      "priority": "high"
+    },
+    "product": {
+      "displayName": "Products",
+      "id": "6488cbaf1124f2c31059c03c",
+      "itemCount": 896,
+      "fieldAnalysis": {
+        "textFields": [
+          "tax-category",
+          "ec-product-type",
+          "name",
+          "manufacturer-2",
+          "slug",
+          "default-sku"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "shippable"
+        ],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "description"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "content-optimization",
+          "field": "description",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "product",
+        "existingSchema": "product",
+        "fieldMappings": {
+          "tax-category": {
+            "type": "string"
+          },
+          "ec-product-type": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "manufacturer-2": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "default-sku": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text",
+            "rows": 4
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "tax-category": "standard-taxable",
+        "shippable": true,
+        "ec-product-type": "ff42fee0113744f693a764e3431a9cc2",
+        "name": "Orchestra",
+        "description": "The Orchestra Collection offers an ensemble of seating solutions perfect for the needs of all facili..."
+      },
+      "priority": "high"
+    },
+    "department": {
+      "displayName": "Departments",
+      "id": "6488cbaf1124f2c31059c03d",
+      "itemCount": 22,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "department",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Engineering",
+        "slug": "engineering"
+      },
+      "priority": "medium"
+    },
+    "rendering": {
+      "displayName": "Renderings",
+      "id": "6488cbaf1124f2c31059c03e",
+      "itemCount": 3,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug",
+          "project-category",
+          "example-1-title",
+          "example-2-title",
+          "example-3-title"
+        ],
+        "imageFields": [
+          "header-image"
+        ],
+        "referenceFields": [
+          "rendering-examples",
+          "rendering-examples-2",
+          "rendering-examples-3"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "example-3-title",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "rendering",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "project-category": {
+            "type": "string"
+          },
+          "example-1-title": {
+            "type": "string"
+          },
+          "example-2-title": {
+            "type": "string"
+          },
+          "example-3-title": {
+            "type": "string"
+          },
+          "header-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "rendering-examples": {
+            "type": "array",
+            "of": [
+              {
+                "type": "renderingexamples"
+              }
+            ]
+          },
+          "rendering-examples-2": {
+            "type": "array",
+            "of": [
+              {
+                "type": "renderingexamples2"
+              }
+            ]
+          },
+          "rendering-examples-3": {
+            "type": "array",
+            "of": [
+              {
+                "type": "renderingexamples3"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "rendering-examples",
+            "type": "array",
+            "targetCollection": "renderingexamples",
+            "description": "References to rendering-examples collection"
+          },
+          {
+            "field": "rendering-examples-2",
+            "type": "array",
+            "targetCollection": "renderingexamples2",
+            "description": "References to rendering-examples-2 collection"
+          },
+          {
+            "field": "rendering-examples-3",
+            "type": "array",
+            "targetCollection": "renderingexamples3",
+            "description": "References to rendering-examples-3 collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "name": "Education",
+        "slug": "education",
+        "project-category": "6488cbaf1124f2c31059c4de",
+        "rendering-examples": "[ARRAY] 10 items",
+        "example-1-title": "Classrooms"
+      },
+      "priority": "medium"
+    },
+    "sku": {
+      "displayName": "SKUs",
+      "id": "6488cbaf1124f2c31059c03f",
+      "itemCount": 896,
+      "fieldAnalysis": {
+        "textFields": [
+          "ec-sku-billing-method",
+          "name",
+          "product",
+          "slug"
+        ],
+        "imageFields": [
+          "main-image"
+        ],
+        "referenceFields": [
+          "more-images",
+          "download-files"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": [
+          "compare-at-price",
+          "width",
+          "length",
+          "height",
+          "price",
+          "weight",
+          "ec-sku-subscription-plan",
+          "sku-values",
+          "sku"
+        ]
+      },
+      "enhancementPotential": 95,
+      "opportunities": [
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "sku",
+        "existingSchema": null,
+        "fieldMappings": {
+          "ec-sku-billing-method": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "product": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "main-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "more-images": {
+            "type": "array",
+            "of": [
+              {
+                "type": "moreimages"
+              }
+            ]
+          },
+          "download-files": {
+            "type": "array",
+            "of": [
+              {
+                "type": "downloadfiles"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "more-images",
+            "type": "array",
+            "targetCollection": "moreimages",
+            "description": "References to more-images collection"
+          },
+          {
+            "field": "download-files",
+            "type": "array",
+            "targetCollection": "downloadfiles",
+            "description": "References to download-files collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "ec-sku-billing-method": "one-time",
+        "compare-at-price": null,
+        "width": null,
+        "length": null,
+        "height": null
+      },
+      "priority": "high"
+    },
+    "rendering-categories": {
+      "displayName": "Rendering Categories",
+      "id": "6488cbaf1124f2c31059c040",
+      "itemCount": 7,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 55,
+      "opportunities": [
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "renderingcategories",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Workplace",
+        "slug": "workplace"
+      },
+      "priority": "low"
+    },
+    "blog": {
+      "displayName": "Blog Posts",
+      "id": "6488cbaf1124f2c31059c041",
+      "itemCount": 825,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug",
+          "category-2"
+        ],
+        "imageFields": [
+          "main-image-2"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "falkbuilt-feature"
+        ],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "content-2"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        },
+        {
+          "type": "content-optimization",
+          "field": "content-2",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "blog",
+        "existingSchema": "blogPost",
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "category-2": {
+            "type": "string"
+          },
+          "content-2": {
+            "type": "text",
+            "rows": 4
+          },
+          "main-image-2": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "falkbuilt-feature": false,
+        "content-2": "<p id=\"\"><strong id=\"\">Please join us in welcoming Michael Flores to Tangram! He is joining the Dall...",
+        "name": "Meet Michael Flores",
+        "slug": "meet-michael-flores",
+        "main-image-2": {
+          "fileId": "682b8117748081ee091b0be3",
+          "url": "https://cdn.prod.website-files.com/5d4c9442574a782d86d480d5/682b8117748081ee091b0be3_Michael%20Flores.png",
+          "alt": null
+        }
+      },
+      "priority": "high"
+    },
+    "instagram-photos": {
+      "displayName": "Instagram Photos",
+      "id": "6488cbaf1124f2c31059c042",
+      "itemCount": 54,
+      "fieldAnalysis": {
+        "textFields": [
+          "info",
+          "name"
+        ],
+        "imageFields": [
+          "photo-2"
+        ],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [
+          "slug"
+        ],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "instagramphotos",
+        "existingSchema": null,
+        "fieldMappings": {
+          "info": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "photo-2": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "info": "Stay safe and have a scenic weekend 🏙 #TangramInteriors #tgif",
+        "name": "2340237464056077295_259925719",
+        "slug": "2340237464056077295-259925719",
+        "photo-2": {
+          "fileId": "6488cbaf1124f2c31059e99d",
+          "url": "https://uploads-ssl.webflow.com/5d4c9442574a782d86d480d5/642b5f6cdb3ee224bb3535b7_20230403T1121-fc283401-afaf-4be6-aabc-9ac3abedc310.jpeg",
+          "alt": null
+        }
+      },
+      "priority": "high"
+    },
+    "locations": {
+      "displayName": "Locations",
+      "id": "6488cbaf1124f2c31059c044",
+      "itemCount": 7,
+      "fieldAnalysis": {
+        "textFields": [
+          "abreviation",
+          "street-address",
+          "city-state-zip",
+          "name",
+          "regional-leader",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [
+          "sales-team-page"
+        ],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "locations",
+        "existingSchema": null,
+        "fieldMappings": {
+          "abreviation": {
+            "type": "string"
+          },
+          "street-address": {
+            "type": "string"
+          },
+          "city-state-zip": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "regional-leader": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "sales-team-page": false,
+        "abreviation": "LUB",
+        "street-address": "6510 70th St",
+        "city-state-zip": "Lubbock, TX 79424",
+        "name": "Lubbock"
+      },
+      "priority": "low"
+    },
+    "blog-categories": {
+      "displayName": "Blog Categories",
+      "id": "6488cbaf1124f2c31059c046",
+      "itemCount": 31,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "blogcategories",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Second Safest Place Webinar Series",
+        "slug": "second-safest-place-webinar-series"
+      },
+      "priority": "high"
+    },
+    "tangram-services": {
+      "displayName": "Tangram Services",
+      "id": "6488cbaf1124f2c31059c047",
+      "itemCount": 32,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "summary"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 90,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-optimization",
+          "field": "summary",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "tangramservices",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "text",
+            "rows": 4
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "summary": "<p id=\"\">Studio Other is deeply committed to responsible furniture manufacturing. Our designs are cr...",
+        "name": "Responsible Furniture",
+        "slug": "responsible-furniture"
+      },
+      "priority": "high"
+    },
+    "events": {
+      "displayName": "Events",
+      "id": "6488cbaf1124f2c31059c048",
+      "itemCount": 0,
+      "status": "empty"
+    },
+    "project-category": {
+      "displayName": "Project Categories",
+      "id": "6488cbaf1124f2c31059c062",
+      "itemCount": 5,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "projectcategory",
+        "existingSchema": "project",
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Studio Other",
+        "slug": "studio-other"
+      },
+      "priority": "medium"
+    },
+    "intro-packages": {
+      "displayName": "Intro Packages",
+      "id": "6488cbaf1124f2c31059c094",
+      "itemCount": 0,
+      "status": "empty"
+    },
+    "client-list": {
+      "displayName": "Client Lists",
+      "id": "6488cbaf1124f2c31059c0b4",
+      "itemCount": 1176,
+      "fieldAnalysis": {
+        "textFields": [
+          "city",
+          "name",
+          "state",
+          "address",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [
+          "latitude",
+          "longitude"
+        ],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "clientlist",
+        "existingSchema": null,
+        "fieldMappings": {
+          "city": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "city": "Fresno",
+        "name": "Veterans Health Administration",
+        "latitude": "36.77255",
+        "longitude": "-119.779263",
+        "state": "CA"
+      },
+      "priority": "high"
+    },
+    "vertical-markets": {
+      "displayName": "Vertical Markets",
+      "id": "6488cbaf1124f2c31059c0cc",
+      "itemCount": 5,
+      "fieldAnalysis": {
+        "textFields": [
+          "title-5",
+          "title-6",
+          "title-7",
+          "name",
+          "headline",
+          "title-1",
+          "title-2",
+          "title-3",
+          "title-4",
+          "slug",
+          "featured-puzzle"
+        ],
+        "imageFields": [
+          "featured-video",
+          "featured-image-2",
+          "featured-image-3",
+          "featured-image-4",
+          "featured-image-5",
+          "featured-image",
+          "menu-icon"
+        ],
+        "referenceFields": [
+          "featured-products",
+          "featured-manufacturers",
+          "featured-projects",
+          "team"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "paragraph-1",
+          "paragraph-2",
+          "paragraph-3",
+          "paragraph-4",
+          "paragraph-5",
+          "paragraph-6",
+          "paragraph-7",
+          "overview-paragraph"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "title-5",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "title-6",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "title-7",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "title-1",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "title-2",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "title-3",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "seo-enhancement",
+          "field": "title-4",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        },
+        {
+          "type": "content-optimization",
+          "field": "paragraph-1",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        },
+        {
+          "type": "content-optimization",
+          "field": "paragraph-2",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        },
+        {
+          "type": "content-optimization",
+          "field": "paragraph-3",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        },
+        {
+          "type": "content-optimization",
+          "field": "paragraph-4",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        },
+        {
+          "type": "content-optimization",
+          "field": "paragraph-5",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        },
+        {
+          "type": "content-optimization",
+          "field": "paragraph-6",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        },
+        {
+          "type": "content-optimization",
+          "field": "paragraph-7",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        },
+        {
+          "type": "content-optimization",
+          "field": "overview-paragraph",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "verticalmarkets",
+        "existingSchema": "verticalMarket",
+        "fieldMappings": {
+          "title-5": {
+            "type": "string"
+          },
+          "title-6": {
+            "type": "string"
+          },
+          "title-7": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "headline": {
+            "type": "string"
+          },
+          "title-1": {
+            "type": "string"
+          },
+          "title-2": {
+            "type": "string"
+          },
+          "title-3": {
+            "type": "string"
+          },
+          "title-4": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "featured-puzzle": {
+            "type": "string"
+          },
+          "paragraph-1": {
+            "type": "text",
+            "rows": 4
+          },
+          "paragraph-2": {
+            "type": "text",
+            "rows": 4
+          },
+          "paragraph-3": {
+            "type": "text",
+            "rows": 4
+          },
+          "paragraph-4": {
+            "type": "text",
+            "rows": 4
+          },
+          "paragraph-5": {
+            "type": "text",
+            "rows": 4
+          },
+          "paragraph-6": {
+            "type": "text",
+            "rows": 4
+          },
+          "paragraph-7": {
+            "type": "text",
+            "rows": 4
+          },
+          "overview-paragraph": {
+            "type": "text",
+            "rows": 4
+          },
+          "featured-video": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-image-2": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-image-3": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-image-4": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-image-5": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "menu-icon": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "featured-products": {
+            "type": "array",
+            "of": [
+              {
+                "type": "featuredproducts"
+              }
+            ]
+          },
+          "featured-manufacturers": {
+            "type": "array",
+            "of": [
+              {
+                "type": "featuredmanufacturers"
+              }
+            ]
+          },
+          "featured-projects": {
+            "type": "array",
+            "of": [
+              {
+                "type": "featuredprojects"
+              }
+            ]
+          },
+          "team": {
+            "type": "array",
+            "of": [
+              {
+                "type": "team"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "featured-products",
+            "type": "array",
+            "targetCollection": "featuredproducts",
+            "description": "References to featured-products collection"
+          },
+          {
+            "field": "featured-manufacturers",
+            "type": "array",
+            "targetCollection": "featuredmanufacturers",
+            "description": "References to featured-manufacturers collection"
+          },
+          {
+            "field": "featured-projects",
+            "type": "array",
+            "targetCollection": "featuredprojects",
+            "description": "References to featured-projects collection"
+          },
+          {
+            "field": "team",
+            "type": "array",
+            "targetCollection": "team",
+            "description": "References to team collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "featured-video": {
+          "url": "https://vimeo.com/793412011",
+          "metadata": {
+            "width": 1920,
+            "height": 1013,
+            "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F793412011%3Fapp_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F793412011&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1597266175-ce28448aea2d1dee69ea7bb2b22fe3e2500cf5205518b1ff1c93fc1f3c03ad36-d_1280&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=vimeo\" width=\"1920\" height=\"1013\" scrolling=\"no\" title=\"Vimeo embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+            "aspectRatio": 0,
+            "title": "Belkin Case Study",
+            "provider_name": "Vimeo",
+            "type": "video",
+            "thumbnail_url": "https://i.vimeocdn.com/video/1597266175-ce28448aea2d1dee69ea7bb2b22fe3e2500cf5205518b1ff1c93fc1f3c03ad36-d_1280",
+            "description": "Tangram + Studio Other Case Study showcasing furniture collection provided for the company's brand new El Segundo, CA headquarters.",
+            "author_name": "Tangram Marketing"
+          }
+        },
+        "title-5": "Adaptability for Future Growth",
+        "title-6": "Sustainability for a Better Future",
+        "title-7": "Elevate Your Workspace Today",
+        "name": "Workplaces"
+      },
+      "priority": "critical"
+    },
+    "spaces": {
+      "displayName": "Spaces",
+      "id": "64f8aa28842667216358d127",
+      "itemCount": 24,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug",
+          "vertical-market"
+        ],
+        "imageFields": [
+          "featured-image"
+        ],
+        "referenceFields": [
+          "puzzle-feature",
+          "products"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "featured-paragraph"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        },
+        {
+          "type": "content-optimization",
+          "field": "featured-paragraph",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "spaces",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "vertical-market": {
+            "type": "string"
+          },
+          "featured-paragraph": {
+            "type": "text",
+            "rows": 4
+          },
+          "featured-image": {
+            "type": "image",
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alternative Text"
+              }
+            ]
+          },
+          "puzzle-feature": {
+            "type": "array",
+            "of": [
+              {
+                "type": "puzzlefeature"
+              }
+            ]
+          },
+          "products": {
+            "type": "array",
+            "of": [
+              {
+                "type": "products"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "puzzle-feature",
+            "type": "array",
+            "targetCollection": "puzzlefeature",
+            "description": "References to puzzle-feature collection"
+          },
+          {
+            "field": "products",
+            "type": "array",
+            "targetCollection": "products",
+            "description": "References to products collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "name": "Task Seating",
+        "slug": "task-chairs",
+        "vertical-market": "6488cbaf1124f2c31059d4a9",
+        "puzzle-feature": "[ARRAY] 1 items",
+        "products": "[ARRAY] 6 items"
+      },
+      "priority": "medium"
+    },
+    "microsite": {
+      "displayName": "Microsites",
+      "id": "65a6fbafdc534d2d3c25373b",
+      "itemCount": 29,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "salesperson",
+          "vertical-market",
+          "showroom",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [
+          "projects",
+          "publications",
+          "team",
+          "featured-products"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [
+          "note-to-customer"
+        ],
+        "unknownFields": []
+      },
+      "enhancementPotential": 100,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        },
+        {
+          "type": "content-optimization",
+          "field": "note-to-customer",
+          "priority": "medium",
+          "description": "Optimize and enhance long-form content"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "microsite",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "salesperson": {
+            "type": "string"
+          },
+          "vertical-market": {
+            "type": "string"
+          },
+          "showroom": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "note-to-customer": {
+            "type": "text",
+            "rows": 4
+          },
+          "projects": {
+            "type": "array",
+            "of": [
+              {
+                "type": "projects"
+              }
+            ]
+          },
+          "publications": {
+            "type": "array",
+            "of": [
+              {
+                "type": "publications"
+              }
+            ]
+          },
+          "team": {
+            "type": "array",
+            "of": [
+              {
+                "type": "team"
+              }
+            ]
+          },
+          "featured-products": {
+            "type": "array",
+            "of": [
+              {
+                "type": "featuredproducts"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "projects",
+            "type": "array",
+            "targetCollection": "projects",
+            "description": "References to projects collection"
+          },
+          {
+            "field": "publications",
+            "type": "array",
+            "targetCollection": "publications",
+            "description": "References to publications collection"
+          },
+          {
+            "field": "team",
+            "type": "array",
+            "targetCollection": "team",
+            "description": "References to team collection"
+          },
+          {
+            "field": "featured-products",
+            "type": "array",
+            "targetCollection": "featuredproducts",
+            "description": "References to featured-products collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "name": "Lubbock Cooper ISD",
+        "projects": "[ARRAY] 5 items",
+        "publications": "[ARRAY] 2 items",
+        "salesperson": "65fc8c667ccf34b4f7b10c19",
+        "team": "[ARRAY] 6 items"
+      },
+      "priority": "high"
+    },
+    "product-categories": {
+      "displayName": "Product Categories",
+      "id": "65fb2ff80af77f5edae663c6",
+      "itemCount": 55,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [
+          "parent-category"
+        ],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "productcategories",
+        "existingSchema": "product",
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "parent-category": {
+            "type": "array",
+            "of": [
+              {
+                "type": "parentcategory"
+              }
+            ]
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": [
+          {
+            "field": "parent-category",
+            "type": "array",
+            "targetCollection": "parentcategory",
+            "description": "References to parent-category collection"
+          }
+        ]
+      },
+      "sampleData": {
+        "name": "Side + Guest Chairs",
+        "slug": "side-guest-chairs",
+        "parent-category": "[ARRAY] 1 items"
+      },
+      "priority": "high"
+    },
+    "frames": {
+      "displayName": "Frames",
+      "id": "6744ae3e3a21ffa4302e9a87",
+      "itemCount": 2,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [
+          "link-to-frame"
+        ],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 70,
+      "opportunities": [
+        {
+          "type": "seo-enhancement",
+          "field": "name",
+          "priority": "high",
+          "description": "Enhance title/name with SEO optimization"
+        },
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "frames",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "link-to-frame": "https://indd.adobe.com/view/6cc92349-cc0d-48fe-b93d-7029f0595324",
+        "name": "Tangram Jazwares Magazine",
+        "slug": "jazwares"
+      },
+      "priority": "medium"
+    },
+    "featured-image": {
+      "displayName": "Featured Images",
+      "id": "6758be81e8dfe0213e75f3ef",
+      "itemCount": 1,
+      "fieldAnalysis": {
+        "textFields": [
+          "name",
+          "slug"
+        ],
+        "imageFields": [],
+        "referenceFields": [],
+        "dateFields": [],
+        "numberFields": [],
+        "booleanFields": [],
+        "urlFields": [],
+        "emailFields": [],
+        "phoneFields": [],
+        "richTextFields": [],
+        "unknownFields": []
+      },
+      "enhancementPotential": 55,
+      "opportunities": [
+        {
+          "type": "content-generation",
+          "field": "metaDescription",
+          "priority": "medium",
+          "description": "Generate SEO meta descriptions"
+        }
+      ],
+      "schemaMapping": {
+        "suggestedSchemaName": "featuredimage",
+        "existingSchema": null,
+        "fieldMappings": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "newFieldsNeeded": [
+          {
+            "name": "aiEnhanced",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "enhancementMetrics",
+            "type": "object",
+            "fields": [
+              {
+                "name": "qualityScore",
+                "type": "number"
+              },
+              {
+                "name": "lastEnhanced",
+                "type": "datetime"
+              },
+              {
+                "name": "enhancementCount",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "seoMetadata",
+            "type": "object",
+            "fields": [
+              {
+                "name": "metaDescription",
+                "type": "text"
+              },
+              {
+                "name": "keywords",
+                "type": "array",
+                "of": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "referenceRelationships": []
+      },
+      "sampleData": {
+        "name": "Corporate",
+        "slug": "corporate"
+      },
+      "priority": "low"
+    }
+  },
+  "totalItems": 7003,
+  "aiEnhancementOpportunities": [],
+  "migrationStrategy": {}
+}

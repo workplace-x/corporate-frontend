@@ -1,0 +1,693 @@
+🚀 Starting COMPLETE Webflow → Sanity Migration...
+============================================================
+📋 Found Employee Collection: Employees
+📋 Found Project Collection: Projects
+============================================================
+🔄 Migrating employees via Webflow API...
+📋 Using collection: Employees (team)
+📥 Fetching all items from collection...
+   📄 Fetched 100 items so far...
+   📄 Fetched 200 items so far...
+   📄 Fetched 300 items so far...
+   📄 Fetched 400 items so far...
+   📄 Fetched 421 items so far...
+✅ Total items fetched: 421
+📄 Found 421 employees in Webflow
+✅ [1/421] Anh Neustadter
+✅ [2/421] Cameron Christensen
+✅ [3/421] Andrew Roche
+✅ [4/421] Kelly Spear
+✅ [5/421] Britni Wilkens
+✅ [6/421] Ciara Holland
+✅ [7/421] Kade Turnage
+✅ [8/421] Tammy Miller
+✅ [9/421] Rob Barganier
+✅ [10/421] Kevin Roman
+✅ [11/421] Austin Halford
+✅ [12/421] Katlyn Henschel
+✅ [13/421] Tonia Morrell
+✅ [14/421] Cristin Meneses
+✅ [15/421] Tom Ramos
+✅ [16/421] Sal Sanchez Jr
+✅ [17/421] Rosy Ramirez
+✅ [18/421] Thalia De La Rosa
+✅ [19/421] Roberto Lopez
+✅ [20/421] Lorena Alvarado
+✅ [21/421] Jose Leal
+✅ [22/421] Jose Alvarado
+✅ [23/421] Hugo Zamudio
+✅ [24/421] Froylan Perez
+✅ [25/421] Fernando Herrera
+✅ [26/421] Ernesto Castillo
+✅ [27/421] Eddie Espinoza
+✅ [28/421] Derrick Bell
+✅ [29/421] Cindy Haynes
+✅ [30/421] Chuck LeDee
+✅ [31/421] Cassandra Sloane
+✅ [32/421] Salvador Pelayo
+✅ [33/421] Manuel Ellis
+✅ [34/421] Manuel De La Cruz
+✅ [35/421] Veronica Ansari
+✅ [36/421] Stacey Jewell
+✅ [37/421] Michelle Shannon
+✅ [38/421] Carol Uribe
+✅ [39/421] Danielle Stevens
+✅ [40/421] Shameika Hudson
+✅ [41/421] Jose Martinez
+✅ [42/421] Breana Parker
+✅ [43/421] Scott Birdsong
+✅ [44/421] Alex Kalejs
+✅ [45/421] Courtney Bruce
+✅ [46/421] Allison Berry
+✅ [47/421] Donnie McDuff
+✅ [48/421] Cameron Jewell
+✅ [49/421] Cindy Haynes
+✅ [50/421] JD Alaoui
+✅ [51/421] Will Wells
+✅ [52/421] Raul Bravo
+✅ [53/421] Monica Serowski
+✅ [54/421] Adriana Gonzalez
+✅ [55/421] Bob Chaundy
+✅ [56/421] Tom Banker
+✅ [57/421] Nidia Alvarez
+✅ [58/421] Whitney Williams
+✅ [59/421] Lindsey Wilkerson
+✅ [60/421] Molly Grumbo
+✅ [61/421] Arielle Ship
+✅ [62/421] Donovan Hyde
+✅ [63/421] Rick Camarero
+✅ [64/421] Jen Parker
+✅ [65/421] Cynthia Mendez
+✅ [66/421] Stacey Jewell
+✅ [67/421] Jalen Gibson
+✅ [68/421] Mariah Morales
+✅ [69/421] Kari Hogan
+✅ [70/421] Khadine Zepeda
+✅ [71/421] Alex Sawyer
+✅ [72/421] Anh Le
+✅ [73/421] Felecia Bradley
+✅ [74/421] Theresa Hares
+✅ [75/421] Ali McGee
+✅ [76/421] Jazmin Ocegueda
+✅ [77/421] Emily Lang
+✅ [78/421] Jennifer Webber
+✅ [79/421] Gabriel Ngaosi
+✅ [80/421] Chris Fong
+✅ [81/421] Andy Figueroa
+✅ [82/421] Mark Chaput
+✅ [83/421] Suzi Nguyen
+✅ [84/421] Sonya Lozowski
+✅ [85/421] Danielle Dennison
+✅ [86/421] Tobi Oginni
+✅ [87/421] Andrea Butcher
+✅ [88/421] Andrew Serrano
+✅ [89/421] Sam Barrios
+✅ [90/421] Abby Avila
+✅ [91/421] Francisco Mendoza
+✅ [92/421] Jerome Salvador
+✅ [93/421] Sandra Ramirez-Avilez
+✅ [94/421] Thomas McNally
+✅ [95/421] Nena Bruton
+✅ [96/421] Andrea Cappelli Dang
+✅ [97/421] Oscar Rolon
+✅ [98/421] Danielle MacPhetridge
+✅ [99/421] Fernando Guadiana
+✅ [100/421] Kaitlyn Nowell
+✅ [101/421] Taylor Boswell
+✅ [102/421] Connor Kieckbusch
+✅ [103/421] Jessica Alvarado
+✅ [104/421] Peyton Romo
+✅ [105/421] Jon Hart
+✅ [106/421] Jose Avalos
+✅ [107/421] Michelle Miller
+✅ [108/421] Monique Chairez
+✅ [109/421] Kyle Mora
+✅ [110/421] Mark Peters
+✅ [111/421] Jon Leach
+✅ [112/421] Vernon Steitz
+✅ [113/421] Lauren Ghizzoni
+✅ [114/421] Courtney Samuelson
+✅ [115/421] Ashlee Malone
+✅ [116/421] Amanda Seitzler
+✅ [117/421] Sarah Wange
+✅ [118/421] Kelsey Davis
+✅ [119/421] Brent Farver
+✅ [120/421] Angela Ramon
+✅ [121/421] Taylor Hinke
+✅ [122/421] Diego Bravo
+✅ [123/421] Mark Simmons
+✅ [124/421] Stan Ferris
+✅ [125/421] Octavio Padilla
+✅ [126/421] Dido Flores
+✅ [127/421] Daniel Weikel
+✅ [128/421] Richard Tuatuaa
+✅ [129/421] Fausto Chavez
+✅ [130/421] Voltaire Villacruzada
+✅ [131/421] Ashley Gilliam
+✅ [132/421] Mary Valdez
+✅ [133/421] Torie Hamilton 1
+✅ [134/421] Paolo Hernandez
+✅ [135/421] Shan Cawili
+✅ [136/421] Alejandro Torres
+✅ [137/421] Marty Gonzales
+✅ [138/421] Rafael Gonzalez
+✅ [139/421] Manuel Lepe
+✅ [140/421] Justin Vasu
+✅ [141/421] Stacey LeGros
+✅ [142/421] Jo Tapia
+✅ [143/421] Ed Gutierrez
+✅ [144/421] Lora Apodaca
+✅ [145/421] upwork
+✅ [146/421] Yvette Alvarado
+✅ [147/421] William Fueglein
+✅ [148/421] Vu Le
+✅ [149/421] Vivian Muniz
+✅ [150/421] Victor Wilkens
+✅ [151/421] Victor Medina
+✅ [152/421] Veronica Ansari
+✅ [153/421] Verenice Macedo
+✅ [154/421] Vanessa Perez
+✅ [155/421] Vanessa Montano
+✅ [156/421] Vanessa Hirn
+✅ [157/421] Vanessa Chrisman
+✅ [158/421] Valerie Navas
+✅ [159/421] Tyrone Sims
+✅ [160/421] Tyler Seguancia
+✅ [161/421] Tristin Kranenburg
+✅ [162/421] Treavon Francis
+✅ [163/421] Traci Briggs
+✅ [164/421] Tony Gamboa
+✅ [165/421] Todd Bynon
+✅ [166/421] Thomas Gallagher
+✅ [167/421] Taylor Vasu
+✅ [168/421] Taunia Campbell
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [169/421] Tasha O'Neal
+✅ [170/421] Tanya San Roman
+✅ [171/421] Susan Simmons
+✅ [172/421] Sue Pursche
+✅ [173/421] Stephanie Dickson
+✅ [174/421] Stephanie Bonilla
+✅ [175/421] Stacy Cole
+✅ [176/421] Son Nguyen
+✅ [177/421] Sheldon Sermonia
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [178/421] Sharon Thompson
+✅ [179/421] Shannon Hanifan
+✅ [180/421] Shane Lovell
+✅ [181/421] Serena Luna
+✅ [182/421] Savannah Knox
+✅ [183/421] Sarah Williamson
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [184/421] Sarah Pearce
+✅ [185/421] Sarah Ferneau
+✅ [186/421] Sarabeth Schibler
+✅ [187/421] Sara Atallah
+✅ [188/421] Samantha East
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [189/421] Ryan Burillo
+✅ [190/421] Roy Andries
+✅ [191/421] Romell Salanguit
+✅ [192/421] Robert Reynoso
+✅ [193/421] Robert Murphy
+✅ [194/421] Rigo Nevarez
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [195/421] Ricky Wolter
+✅ [196/421] Rich Garcia
+✅ [197/421] Rhonda Law
+✅ [198/421] Rachelle Daniel
+✅ [199/421] Pete Galvan
+✅ [200/421] Paul Gonzalez
+✅ [201/421] Paul Bawol
+✅ [202/421] Norma Adams
+✅ [203/421] Noosha Hodges
+✅ [204/421] Nicole Zywiec
+✅ [205/421] Nick Meter
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [206/421] Nick Isburgh
+✅ [207/421] Nick Greenko
+✅ [208/421] Nathan Drake
+✅ [209/421] Natalya Tsymbler
+✅ [210/421] Nanette Holton
+✅ [211/421] Mitchel Zelinger
+✅ [212/421] Michelle Shannon
+✅ [213/421] Michelle Gibbs
+✅ [214/421] Michael Mims
+✅ [215/421] Michael Frisina
+✅ [216/421] Mariel Lunasco
+✅ [217/421] Merrilynn Roundy
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [218/421] Melissa Rochford
+✅ [219/421] Melissa Gaytan
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [220/421] Melaina Solomon
+✅ [221/421] Meg Moussamih
+✅ [222/421] Mary Morrison
+✅ [223/421] Mary Moen
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [224/421] Martha Parra
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [225/421] Martha Esteves
+✅ [226/421] Martha Carmona
+✅ [227/421] Mark Wild
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [228/421] Mark Coxon
+✅ [229/421] Marissa Lambert
+✅ [230/421] Noosha Hodges
+✅ [231/421] Maricris Lafiguera
+✅ [232/421] Marcella Cendejas
+✅ [233/421] Lupe Morfin
+✅ [234/421] Luis Carmona
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [235/421] Lucy Garcia
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [236/421] Luann Flores
+✅ [237/421] Lovella Tulawan
+✅ [238/421] Louie Mendoza
+✅ [239/421] Lorena Alvarado
+✅ [240/421] Liz Charney
+✅ [241/421] Lissen Gregory
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [242/421] Lindsey Sage
+✅ [243/421] Lily Gomez
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [244/421] Letty Pedregal
+✅ [245/421] Leslie Symm
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [246/421] Leslie McDonald
+✅ [247/421] Leonardo Enriquez
+✅ [248/421] Leonard Triolo
+✅ [249/421] Lenyn Cristobal
+✅ [250/421] Laura Nix
+✅ [251/421] Laura Diaz
+✅ [252/421] Laura Cutter
+✅ [253/421] Latasha Mitchell
+✅ [254/421] Larry Weikel
+✅ [255/421] Kris Kimble
+✅ [256/421] Kimmy Nguyen
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [257/421] Kimberly Wiggs
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [258/421] Kimberly Smyth
+✅ [259/421] Kimberly Barnow
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [260/421] Khalil Denson
+✅ [261/421] Kayla Hodge
+✅ [262/421] Kaycee Sexauer
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [263/421] Katlynn Melendez
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [264/421] Katie Scott
+✅ [265/421] Kathy Shiu
+✅ [266/421] Kathy MacIntosh
+✅ [267/421] Kasey Christensen
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [268/421] Karlie Poindexter
+✅ [269/421] Karlee Budge
+✅ [270/421] Karen Gaylord
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [271/421] Kaitlin Finney
+✅ [272/421] Julia Ehman
+✅ [273/421] Juan Vazquez
+✅ [274/421] Juan Salazar
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [275/421] JR Purnell
+✅ [276/421] Josh Martin
+✅ [277/421] Joseph Ortega
+✅ [278/421] Josefina Arredondo
+✅ [279/421] Jorge Hernandez
+✅ [280/421] Jon Sheppard
+✅ [281/421] Joe Lozowski
+✅ [282/421] Jodi Aylor
+✅ [283/421] Joanne Fischer
+✅ [284/421] Jim Simmons
+✅ [285/421] Jillian Morrison
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [286/421] Jeremy Wilson
+✅ [287/421] Jeremy Roether
+✅ [288/421] Jeremy Manuel
+✅ [289/421] Jeremy Knapp
+✅ [290/421] Jennifer Moons
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [291/421] Jennifer L. Tran
+✅ [292/421] Jen Karibian
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [293/421] Jay Kim
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [294/421] Jax DiBenedetto
+✅ [295/421] Jason Romero
+✅ [296/421] Jason Johnson
+✅ [297/421] Jason Jerez
+✅ [298/421] Jason Doerr
+✅ [299/421] Janice DelBarba
+✅ [300/421] Janice Benquechea
+✅ [301/421] Jana L. Windle
+✅ [302/421] Jan Windle
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [303/421] Jake Hunt
+✅ [304/421] Jaime Anguiano
+✅ [305/421] Jack Lang
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [306/421] Jack Hooven
+✅ [307/421] Italia Lucio
+✅ [308/421] Isabel Lozowski
+✅ [309/421] Isabel Granados
+✅ [310/421] Idin Hashemi
+✅ [311/421] Hye Mi Ko
+✅ [312/421] Humberto Garcia
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [313/421] Hope Ramirez
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [314/421] Holly Wachter
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [315/421] Holly Ellsworth
+✅ [316/421] Heidi Recinos
+✅ [317/421] Greg Owen
+✅ [318/421] Gordon Jackson
+✅ [319/421] Glenn Lyon
+✅ [320/421] Gilbert Morales
+✅ [321/421] George Ponce
+✅ [322/421] Gary Vilinsky
+✅ [323/421] Gary Scott
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [324/421] Gabriella Marzola
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [325/421] Francis Alviso
+✅ [326/421] Fabrizio Villalobos
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [327/421] Erin Duff
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [328/421] Erika Hargis
+✅ [329/421] Erick Repreza
+✅ [330/421] Erica Alexander
+✅ [331/421] Eric Lockwood
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [332/421] Emily Garay
+✅ [333/421] Eileen Knox
+✅ [334/421] Denyse Sharp
+✅ [335/421] Denise Mayer
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [336/421] Debra Powers
+✅ [337/421] Debbie Wright
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [338/421] Debbie McGowan
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [339/421] Dawn Dedmon
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [340/421] David Morgan
+✅ [341/421] Dave Teper
+✅ [342/421] Darwin Fernando
+✅ [343/421] Cynthia Vega
+✅ [344/421] Curtis Lee
+✅ [345/421] Cristina Lau
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [346/421] Cristie Smith
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [347/421] Cristian Granados
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [348/421] Cortney Corden
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [349/421] Claremarie Rocha
+✅ [350/421] Cindy OBrien
+✅ [351/421] Chuck LeDee
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [352/421] Christopher Goins
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [353/421] Christina Cisneros
+✅ [354/421] Christi Galuppo
+✅ [355/421] Chris Fisher
+✅ [356/421] Chelsey Cortez
+✅ [357/421] Chelsea Sheehan
+✅ [358/421] Charlotte Wiederholt
+✅ [359/421] Cesar Sanchez
+✅ [360/421] Cathy Vreeland
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [361/421] Cathy DeVand
+✅ [362/421] Catherine Ingalls
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [363/421] Cassie Stepanek
+✅ [364/421] Cassidy Briggs
+✅ [365/421] Carlos Rodriguez
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [366/421] Carlos Galeas
+✅ [367/421] Carlos Castaneda
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [368/421] Carey Mundo
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [369/421] Cabello Costa
+✅ [370/421] Bud Dotson
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [371/421] Brittany Herring
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [372/421] Brittany Black
+✅ [373/421] Brent Troutman
+✅ [374/421] Blanca Guzman
+✅ [375/421] Blanca Burdick
+✅ [376/421] Bira Santos
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [377/421] Bianca Lopez
+✅ [378/421] Barbara Thomas
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [379/421] Austin Thomas
+✅ [380/421] Agustin Contreras
+✅ [381/421] Ashley Redieck
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [382/421] Arnice Arias
+✅ [383/421] Armando Rodriguez
+✅ [384/421] Armando Ramos
+✅ [385/421] Armando Arriola
+✅ [386/421] Arlene Trevathan
+✅ [387/421] Antonette De Leon
+✅ [388/421] Anthony Knox
+✅ [389/421] Anne Dudzik
+✅ [390/421] Anna Tran
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [391/421] Anna Eckberg
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [392/421] Anjanette Blanciak
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [393/421] Angella Hein
+✅ [394/421] Angelina Facundo
+✅ [395/421] Angelika Carry
+✅ [396/421] Angie Gutierrez
+✅ [397/421] Andy Arellano
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [398/421] Andrew Smith
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [399/421] Andra Kaleps
+✅ [400/421] Amity Bertsch
+✅ [401/421] Amber Jones
+✅ [402/421] Amanda Pierce
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [403/421] Alyssa Belluzzi
+✅ [404/421] Alyssa Armesto
+✅ [405/421] Allan Ramos
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [406/421] Alex Bozoian
+✅ [407/421] Alex Arredondo
+✅ [408/421] Albert Castanon
+✅ [409/421] Alan Zurita
+✅ [410/421] Adriana Saenz-Powers
+✅ [411/421] Adriana Haros
+✅ [412/421] Adrian Moreira
+✅ [413/421] Adrian C. Flores
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [414/421] Abel Lopez
+✅ [415/421] Kellie Reed
+✅ [416/421] Alexandra Mitrovich
+✅ [417/421] Jason Betty
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [418/421] Marisa Anderson
+   ⚠️  Image upload failed: Bad Request - Invalid image, could not read metadata
+✅ [419/421] Noosha Dadsetan
+✅ [420/421] Torie Hamilton
+✅ [421/421] Paul Smith
+
+🎉 Employee migration complete:
+   ✅ Success: 421
+   ❌ Failed: 0
+🔄 Migrating projects via Webflow API...
+📋 Using collection: Projects (projects)
+📥 Fetching all items from collection...
+   📄 Fetched 100 items so far...
+   📄 Fetched 166 items so far...
+✅ Total items fetched: 166
+📄 Found 166 projects in Webflow
+✅ [1/166] Ikon Technologies
+✅ [2/166] Confidential Media Client
+✅ [3/166] Options for Learning
+✅ [4/166] ArentFox Schiff
+✅ [5/166] Del Mar Heights School
+✅ [6/166] Everette L. DeGolyer Elementary School
+✅ [7/166] Cate School
+✅ [8/166] Medical City McKinney Women's Hospital
+✅ [9/166] Covenant Health Hope Tower
+✅ [10/166] Confidential Healthcare Client
+✅ [11/166] Moroch
+✅ [12/166] Tangram Fresno Showroom
+✅ [13/166] Confidential Tech Client
+✅ [14/166] Stonebriar Commercial Finance 
+✅ [15/166] Steelcase Dallas WorkLife Center
+✅ [16/166] Swing Set Productions
+✅ [17/166] McAfee
+✅ [18/166] Jones Middle School
+✅ [19/166] CHOC Center for Children's Health at UCI Health Irvine
+✅ [20/166] Air France Lounge at LAX
+✅ [21/166] Altruist
+✅ [22/166] UCI Medical Education
+✅ [23/166] HOK Los Angeles Studio
+✅ [24/166] Gensler Los Angeles
+✅ [25/166] Tangram Dallas 
+✅ [26/166] UCSB Interactive Learning Pavilion
+✅ [27/166] Neiman Marcus - Dallas Hub
+✅ [28/166] Poms & Associates
+✅ [29/166] Wpromote
+✅ [30/166] Pacific Companies
+✅ [31/166] Valley Children's Founder's Plaza
+✅ [32/166] CHOC Pharmacy
+✅ [33/166] Del Mar Union Elementary School District
+✅ [34/166] UCI College of Health Sciences
+✅ [35/166] Chula Vista Elementary School District
+✅ [36/166] Medical City Plano - Women's Renovation
+✅ [37/166] Edwards Lifesciences LINC Café
+✅ [38/166] Valley Children's Eagle Oak Specialty Care Center
+✅ [39/166] Frisco Public Library
+✅ [40/166] MUL-MAC
+✅ [41/166] HRL
+✅ [42/166] Confidential Client
+✅ [43/166] Confidential Client
+✅ [44/166] Medical City Plano
+✅ [45/166] Global Esports Brand
+✅ [46/166] The Trade Desk - Bellevue
+✅ [47/166] IRA Capital
+✅ [48/166] Swinerton
+✅ [49/166] Confidential Technology Company
+✅ [50/166] Transitional Home for Women and Children
+✅ [51/166] Jefferson Lumen home/work Coworking Space
+✅ [52/166] Frankfurt Kurnit Klein & Selz
+✅ [53/166] Prosper ISD – Rockhill High School
+✅ [54/166] Valley Children's Hospital 
+✅ [55/166] Ember 
+✅ [56/166] United States Cold Storage
+✅ [57/166] Los Nietos Middle School
+✅ [58/166] Confidential Behavioral Health Client
+✅ [59/166] 21 Laps Entertainment
+✅ [60/166] Spectrum VoIP
+✅ [61/166] Belkin
+✅ [62/166] Chapman Swenson Family Hall of Engineering
+✅ [63/166] ChowNow
+✅ [64/166] CSUF Student Housing 
+✅ [65/166] CSULB
+✅ [66/166] Fresno Chaffee Zoo Zooplex Center
+✅ [67/166] RBC Wealth Management
+✅ [68/166] Webcor
+✅ [69/166] BMG
+✅ [70/166] Califia Farms
+✅ [71/166] Collectors
+✅ [72/166] West Coast University
+✅ [73/166] City National Bank
+✅ [74/166] The Trade Desk - San Francisco
+✅ [75/166] The Trade Desk - New York
+✅ [76/166] Orgain
+✅ [77/166] Kilroy Realty
+✅ [78/166] Harvey Mudd College McGregor Center
+✅ [79/166] Tangram Newport Beach Showroom
+✅ [80/166] Core Digital Media
+✅ [81/166] Tangram DTLA Falkbuilt Walls
+✅ [82/166] Lee Andrews Group
+✅ [83/166] The Thacher School Creative & Technology Building
+✅ [84/166] Ria Money Transfer
+✅ [85/166] UCI Interdisciplinary Science & Engineering Building
+✅ [86/166] UCLA Pritzker Hall
+✅ [87/166] UCI Student Center
+✅ [88/166] J2 Global
+✅ [89/166] DeviantArt
+✅ [90/166] Critical Role
+✅ [91/166] Alliant Insurance 
+✅ [92/166] Greg's Petroleum Service
+✅ [93/166] TikTok
+✅ [94/166] Confidential Equipment Supplier
+✅ [95/166] UC Merced 
+✅ [96/166] California Health Sciences University
+✅ [97/166] The Trade Desk Chicago
+✅ [98/166] UCLA Anderson School of Management 
+✅ [99/166] Blair, Church & Flynn
+✅ [100/166] WPT Enterprises
+✅ [101/166] AuditBoard
+✅ [102/166] Harbor Distributing
+✅ [103/166] AwesomenessTV
+✅ [104/166] American Career College
+✅ [105/166] All Def Digital
+✅ [106/166] BIG Shopping
+✅ [107/166] Brookfield Residential
+✅ [108/166] Capital Group
+✅ [109/166] DirecTV
+✅ [110/166] DLR Group
+✅ [111/166] Edwards Lifesciences
+✅ [112/166] Imagine Entertainment
+✅ [113/166] Juno Therapeutics
+✅ [114/166] Loyola Marymount University
+✅ [115/166] Microsoft
+✅ [116/166] Microsoft Theater
+✅ [117/166] OceanX
+✅ [118/166] Saatchi & Saatchi
+✅ [119/166] Southern California Gas
+✅ [120/166] UC Merced
+✅ [121/166] USC Village
+✅ [122/166] WPP
+✅ [123/166] JustFab
+✅ [124/166] Kawasaki
+✅ [125/166] Pritzker Group
+✅ [126/166] Too Faced
+✅ [127/166] UCI Medical Center
+✅ [128/166] Zest Financial
+✅ [129/166] Boston Consulting Group
+✅ [130/166] Boston Consulting Group
+✅ [131/166] Boston Consulting Group
+✅ [132/166] Tortoise Advisors
+✅ [133/166] Alexandria Real Estate Equities
+✅ [134/166] Morrison + Foerster
+✅ [135/166] Snell + Wilmer
+✅ [136/166] Murad
+✅ [137/166] Samueli Academy
+✅ [138/166] Perkins + Will
+✅ [139/166] Skybound Entertainment
+✅ [140/166] Asics
+✅ [141/166] Mater Dei High School
+✅ [142/166] Illumina I3 Campus
+✅ [143/166] Magento
+✅ [144/166] USC - Wallis Annenberg School for Communication
+✅ [145/166] Lake Elsinore USD
+✅ [146/166] John Wells Production
+✅ [147/166] Procore
+✅ [148/166] Service Titan
+✅ [149/166] California Wellness Foundation
+✅ [150/166] Fuse Media
+✅ [151/166] Signature Travel Network
+✅ [152/166] CSU, San Bernardino
+✅ [153/166] Bob Hope - LAX
+✅ [154/166] Henkel
+✅ [155/166] Pharmavite
+✅ [156/166] Pacific Life
+✅ [157/166] Confidential Insurance Client - Phoenix
+✅ [158/166] Writers Guild of America
+✅ [159/166] Confidential Client
+✅ [160/166] SAP Hanahaus
+✅ [161/166] Sun-Maid
+✅ [162/166] Boys + Girls Club
+✅ [163/166] Confidential Insurance Client - Woodland Hills
+✅ [164/166] The Trade Desk
+✅ [165/166] Coca Cola - Staples Center
+✅ [166/166] Hulu
+
+🎉 Project migration complete:
+   ✅ Success: 166
+   ❌ Failed: 0
+
+============================================================
+🎉 COMPLETE API-based migration finished!
+✅ Proper image assets created
+✅ Structured references maintained
+✅ Schema alignment achieved
+✅ Future sync capability enabled
+============================================================
